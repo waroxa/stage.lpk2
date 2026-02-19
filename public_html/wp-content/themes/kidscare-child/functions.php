@@ -1089,5 +1089,183 @@ function kidscare_render_waiver_terms_column( $column, $post_id ) {
 
     $accepted = (bool) get_post_meta( $post_id, '_kidscare_waiver_terms_accept', true );
 
-    echo $accepted ? esc_html__( 'Oui', 'kidscare-child' ) : esc_html__( 'Non', 'kidscare-child' );
+	echo $accepted ? esc_html__( 'Oui', 'kidscare-child' ) : esc_html__( 'Non', 'kidscare-child' );
+}
+
+/**
+ * Change "Processing" status to "Success" (English) or "Confirmé" (French).
+ *
+ * @param array    $total_rows  Order totals rows.
+ * @param WC_Order $order       Current order object.
+ * @param string   $tax_display Tax display mode.
+ *
+ * @return array
+ */
+add_filter( 'woocommerce_get_order_item_totals', 'kidscare_change_processing_status_text', 10, 3 );
+function kidscare_change_processing_status_text( $total_rows, $order, $tax_display ) {
+	if ( isset( $total_rows['order_status'] ) && $order->get_status() === 'processing' ) {
+		$locale = get_locale();
+		if ( $locale === 'fr_CA' || $locale === 'fr_FR' ) {
+			$total_rows['order_status']['value'] = 'Confirmé';
+		} else {
+			$total_rows['order_status']['value'] = 'Success';
+		}
+	}
+
+	return $total_rows;
+}
+
+/**
+ * Ensure the reservation date and hour are prominently displayed in emails.
+ *
+ * @param string $time_text        Existing timeslot text.
+ * @param int    $timestamp_start  Start timestamp.
+ * @param mixed  $timeslot         Timeslot details.
+ * @param int    $calendar_id      Calendar ID.
+ *
+ * @return string
+ */
+add_filter( 'booked_emailed_timeslot_text', 'kidscare_format_email_timeslot', 10, 4 );
+function kidscare_format_email_timeslot( $time_text, $timestamp_start, $timeslot, $calendar_id ) {
+	$date_format = get_option( 'date_format' );
+	$time_format = get_option( 'time_format' );
+
+	$date_part = date_i18n( $date_format, $timestamp_start );
+	$time_part = date_i18n( $time_format, $timestamp_start );
+
+	return sprintf(
+		_x( '%1$s at %2$s', 'Reservation date and time format', 'kidscare-child' ),
+		$date_part,
+		$time_part
+	);
+}
+
+/**
+ * Register a simple admin tester for customer processing emails.
+ */
+function kidscare_register_email_tester_page() {
+	add_submenu_page(
+		'tools.php',
+		__( 'KidsCare Email Tester', 'kidscare-child' ),
+		__( 'KidsCare Email Tester', 'kidscare-child' ),
+		'manage_woocommerce',
+		'kidscare-email-tester',
+		'kidscare_render_email_tester_page'
+	);
+}
+add_action( 'admin_menu', 'kidscare_register_email_tester_page' );
+
+/**
+ * Handle email tester form submissions.
+ */
+function kidscare_handle_email_tester_submission() {
+	if ( ! is_admin() || empty( $_POST['kidscare_email_tester_nonce'] ) ) {
+		return;
+	}
+
+	if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['kidscare_email_tester_nonce'] ) ), 'kidscare_email_tester' ) ) {
+		return;
+	}
+
+	if ( ! current_user_can( 'manage_woocommerce' ) ) {
+		return;
+	}
+
+	$order_id = isset( $_POST['kidscare_test_order_id'] ) ? absint( wp_unslash( $_POST['kidscare_test_order_id'] ) ) : 0;
+	$recipient = isset( $_POST['kidscare_test_recipient'] ) ? sanitize_email( wp_unslash( $_POST['kidscare_test_recipient'] ) ) : '';
+
+	if ( ! $order_id ) {
+		add_settings_error( 'kidscare_email_tester', 'kidscare_email_tester_missing_order', __( 'Please enter a valid order ID.', 'kidscare-child' ), 'error' );
+
+		return;
+	}
+
+	$order = wc_get_order( $order_id );
+
+	if ( ! $order ) {
+		add_settings_error( 'kidscare_email_tester', 'kidscare_email_tester_invalid_order', __( 'Order not found.', 'kidscare-child' ), 'error' );
+
+		return;
+	}
+
+	if ( ! function_exists( 'WC' ) || ! WC()->mailer() ) {
+		add_settings_error( 'kidscare_email_tester', 'kidscare_email_tester_no_mailer', __( 'WooCommerce mailer is not available.', 'kidscare-child' ), 'error' );
+
+		return;
+	}
+
+	$emails = WC()->mailer()->get_emails();
+
+	if ( empty( $emails['WC_Email_Customer_Processing_Order'] ) ) {
+		add_settings_error( 'kidscare_email_tester', 'kidscare_email_tester_missing_template', __( 'Customer Processing Order email template is not available.', 'kidscare-child' ), 'error' );
+
+		return;
+	}
+
+	$recipient_callback = null;
+
+	if ( $recipient ) {
+		$recipient_callback = function ( $email_recipient ) use ( $recipient ) {
+			return $recipient ? $recipient : $email_recipient;
+		};
+
+		add_filter( 'woocommerce_email_recipient_customer_processing_order', $recipient_callback );
+	}
+
+	$emails['WC_Email_Customer_Processing_Order']->trigger( $order_id, $order );
+
+	if ( $recipient && $recipient_callback ) {
+		remove_filter( 'woocommerce_email_recipient_customer_processing_order', $recipient_callback );
+	}
+
+	$message = $recipient
+		? sprintf( __( 'Processing email sent for order #%1$d to %2$s.', 'kidscare-child' ), $order_id, $recipient )
+		: sprintf( __( 'Processing email sent for order #%d to the order billing email.', 'kidscare-child' ), $order_id );
+
+	add_settings_error( 'kidscare_email_tester', 'kidscare_email_tester_sent', $message, 'updated' );
+}
+add_action( 'admin_init', 'kidscare_handle_email_tester_submission' );
+
+/**
+ * Render email tester page content.
+ */
+function kidscare_render_email_tester_page() {
+	$sample_timestamp = current_time( 'timestamp' );
+	?>
+	<div class="wrap">
+		<h1><?php esc_html_e( 'KidsCare Email Tester', 'kidscare-child' ); ?></h1>
+		<p><?php esc_html_e( 'Use this tool to trigger the WooCommerce "Customer Processing Order" email and verify your custom order status/date formatting.', 'kidscare-child' ); ?></p>
+		<?php settings_errors( 'kidscare_email_tester' ); ?>
+
+		<form method="post">
+			<?php wp_nonce_field( 'kidscare_email_tester', 'kidscare_email_tester_nonce' ); ?>
+			<table class="form-table" role="presentation">
+				<tr>
+					<th scope="row"><label for="kidscare_test_order_id"><?php esc_html_e( 'Order ID', 'kidscare-child' ); ?></label></th>
+					<td><input id="kidscare_test_order_id" name="kidscare_test_order_id" type="number" class="regular-text" required min="1"></td>
+				</tr>
+				<tr>
+					<th scope="row"><label for="kidscare_test_recipient"><?php esc_html_e( 'Send test to (optional)', 'kidscare-child' ); ?></label></th>
+					<td>
+						<input id="kidscare_test_recipient" name="kidscare_test_recipient" type="email" class="regular-text" placeholder="you@example.com">
+						<p class="description"><?php esc_html_e( 'Leave empty to send to the order billing email.', 'kidscare-child' ); ?></p>
+					</td>
+				</tr>
+			</table>
+
+			<?php submit_button( __( 'Send Processing Email', 'kidscare-child' ) ); ?>
+		</form>
+
+		<hr>
+		<h2><?php esc_html_e( 'Formatting preview', 'kidscare-child' ); ?></h2>
+		<p>
+			<strong><?php esc_html_e( 'Order status label example:', 'kidscare-child' ); ?></strong>
+			<?php echo esc_html( get_locale() === 'fr_CA' || get_locale() === 'fr_FR' ? 'Confirmé' : 'Success' ); ?>
+		</p>
+		<p>
+			<strong><?php esc_html_e( 'Reservation date/time example:', 'kidscare-child' ); ?></strong>
+			<?php echo esc_html( kidscare_format_email_timeslot( '', $sample_timestamp, array(), 0 ) ); ?>
+		</p>
+	</div>
+	<?php
 }
