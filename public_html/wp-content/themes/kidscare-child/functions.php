@@ -122,7 +122,7 @@ function kidscare_get_quickcal_appointment_details_markup( array $appointments, 
     }
 
     if ( $plain_text ) {
-        $output  = PHP_EOL . __( 'Appointment details', 'kidscare-child' ) . PHP_EOL;
+        $output  = PHP_EOL . _x( 'Appointment details', 'QuickCal email section title', 'kidscare-child' ) . PHP_EOL;
         $output .= str_repeat( '-', 40 ) . PHP_EOL;
 
         foreach ( $appointments as $appointment_details ) {
@@ -133,10 +133,16 @@ function kidscare_get_quickcal_appointment_details_markup( array $appointments, 
             if ( ! empty( $appointment_details['timeslot'] ) ) {
                 $output .= sprintf(
                     '%s: %s' . PHP_EOL,
-                    __( 'Date and time', 'kidscare-child' ),
+                    _x( 'Reservation date and time', 'QuickCal reservation schedule label', 'kidscare-child' ),
                     $appointment_details['timeslot']
                 );
             }
+
+            $output .= sprintf(
+                '%s: %s' . PHP_EOL,
+                __( 'Reservation duration', 'kidscare-child' ),
+                __( '2 hours', 'kidscare-child' )
+            );
 
             foreach ( $appointment_details['fields'] as $label => $value ) {
                 $label = trim( (string) $label );
@@ -158,15 +164,17 @@ function kidscare_get_quickcal_appointment_details_markup( array $appointments, 
     ob_start();
     ?>
     <div class="kidscare-email-appointments">
-        <h3><?php esc_html_e( 'Appointment details', 'kidscare-child' ); ?></h3>
+        <h3><?php echo esc_html( _x( 'Appointment details', 'QuickCal email section title', 'kidscare-child' ) ); ?></h3>
         <?php foreach ( $appointments as $appointment_details ) : ?>
             <?php if ( ! empty( $appointment_details['product_name'] ) ) : ?>
                 <p><strong><?php echo esc_html( $appointment_details['product_name'] ); ?></strong></p>
             <?php endif; ?>
 
             <?php if ( ! empty( $appointment_details['timeslot'] ) ) : ?>
-                <p><strong><?php esc_html_e( 'Date and time', 'kidscare-child' ); ?>:</strong> <?php echo esc_html( $appointment_details['timeslot'] ); ?></p>
+                <p><strong><?php echo esc_html( _x( 'Reservation date and time', 'QuickCal reservation schedule label', 'kidscare-child' ) ); ?>:</strong> <?php echo esc_html( $appointment_details['timeslot'] ); ?></p>
             <?php endif; ?>
+
+            <p><strong><?php esc_html_e( 'Reservation duration', 'kidscare-child' ); ?>:</strong> <?php esc_html_e( '2 hours', 'kidscare-child' ); ?></p>
 
             <?php if ( ! empty( $appointment_details['fields'] ) ) : ?>
                 <ul>
@@ -207,6 +215,53 @@ function kidscare_email_append_appointment_details( $order, $sent_to_admin, $pla
     }
 
     kidscare_populate_quickcal_email_placeholders( $email, $order );
+
+    $appointments = kidscare_get_quickcal_appointments_for_order( $order );
+
+    if ( empty( $appointments ) ) {
+        return;
+    }
+
+    $appointment_markup = kidscare_get_quickcal_appointment_details_markup( $appointments, $plain_text );
+
+    if ( $plain_text ) {
+        echo wp_strip_all_tags( $appointment_markup );
+
+        return;
+    }
+
+    echo wp_kses_post( $appointment_markup );
+}
+
+/**
+ * Return true when current locale is French.
+ *
+ * @return bool
+ */
+function kidscare_is_french_locale() {
+    $locale = function_exists( 'determine_locale' ) ? determine_locale() : get_locale();
+
+    return 0 === strpos( strtolower( (string) $locale ), 'fr' );
+}
+
+add_filter( 'wc_order_statuses', 'kidscare_update_processing_order_status_label' );
+/**
+ * Rename the processing order status based on locale.
+ *
+ * @param array $order_statuses WooCommerce order statuses.
+ *
+ * @return array
+ */
+function kidscare_update_processing_order_status_label( $order_statuses ) {
+    if ( ! isset( $order_statuses['wc-processing'] ) ) {
+        return $order_statuses;
+    }
+
+    $order_statuses['wc-processing'] = kidscare_is_french_locale()
+        ? __( 'Confirmé', 'kidscare-child' )
+        : __( 'Success', 'kidscare-child' );
+
+    return $order_statuses;
 }
 
 /**
