@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template 3 — Event detail mobile | Le Petit Kangaroo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero card" style="border-radius:0; border-left:0; border-right:0;">
+      <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80" alt="Événement spécial Aloha avec Stitch" />
+      <span class="hero-badge">Événement spécial · Famille</span>
+    </section>
+
+    <section class="detail-head card" style="margin:12px;">
+      <h1>Événement spécial Aloha avec Stitch</h1>
+      <div class="kpis">
+        <span>Samedi 23 novembre · 11:00–13:00</span>
+        <span>Le Petit Kangaroo — Casablanca</span>
+        <span><strong style="color:var(--ink)">À partir de 35 €</strong> · Billets Event Tickets</span>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <a class="btn-light" href="https://lepetitkangaroo.com/fr/event/evenement-special-aloha-avec-stitch-au-petit-kangaroo/">Page live WordPress</a>
+        <button class="btn-primary" type="button" data-open-sheet>Choisir mes billets</button>
+      </div>
+    </section>
+
+    <section class="sections">
+      <article class="card section-card">
+        <h3>Description</h3>
+        <p>Une expérience premium pensée pour les familles: animations douces, photo corner, mini ateliers créatifs et accueil chaleureux dans l'univers Le Petit Kangaroo.</p>
+      </article>
+
+      <article class="card section-card">
+        <h3>Programme</h3>
+        <ul>
+          <li>11:00 — Accueil + bracelets couleur</li>
+          <li>11:20 — Atelier Aloha guidé</li>
+          <li>12:00 — Rencontre & photos</li>
+          <li>12:30 — Goûter signature</li>
+        </ul>
+      </article>
+
+      <article class="card section-card">
+        <h3>Inclus</h3>
+        <ul>
+          <li>Animation + matériel créatif</li>
+          <li>1 boisson enfant + 1 collation</li>
+          <li>Photo souvenir digitale</li>
+        </ul>
+      </article>
+
+      <article class="card section-card">
+        <h3>Lieu</h3>
+        <p>Le Petit Kangaroo, quartier Californie, Casablanca. Parking proche et accès poussette facile.</p>
+      </article>
+
+      <article class="card section-card faq">
+        <h3>FAQ</h3>
+        <details>
+          <summary>Puis-je annuler mon billet ?</summary>
+          <p>Oui, jusqu'à 48h avant l'événement. Au-delà, un report peut être proposé selon disponibilité.</p>
+        </details>
+        <details>
+          <summary>Quel âge est recommandé ?</summary>
+          <p>Principalement de 3 à 8 ans, avec accompagnement parent pour les plus petits.</p>
+        </details>
+        <details>
+          <summary>Comment fonctionnent les tickets WordPress ?</summary>
+          <p>Ce template est conçu pour brancher les types de billets Event Tickets: enfant, parent accompagnant, pack famille.</p>
+        </details>
+      </article>
+    </section>
+  </main>
+
+  <div class="sticky-bottom">
+    <div class="price">
+      <strong>35 €</strong>
+      <span>prix de départ</span>
+    </div>
+    <button class="btn-primary" type="button" data-open-sheet>Réserver</button>
+  </div>
+
+  <div class="sheet-overlay" data-close-sheet></div>
+  <aside class="sheet" aria-label="Sélection de billets" aria-hidden="true">
+    <div class="handle"></div>
+    <h2 style="margin:0 0 10px; font-size:1rem;">Sélection des billets</h2>
+
+    <article class="ticket-row" data-price="35">
+      <div>
+        <div class="ticket-name">Billet enfant</div>
+        <div class="ticket-price">35 €</div>
+      </div>
+      <div class="qty">
+        <button type="button" data-minus>-</button>
+        <output>0</output>
+        <button type="button" data-plus>+</button>
+      </div>
+    </article>
+
+    <article class="ticket-row" data-price="15">
+      <div>
+        <div class="ticket-name">Parent accompagnant</div>
+        <div class="ticket-price">15 €</div>
+      </div>
+      <div class="qty">
+        <button type="button" data-minus>-</button>
+        <output>0</output>
+        <button type="button" data-plus>+</button>
+      </div>
+    </article>
+
+    <article class="ticket-row" data-price="90">
+      <div>
+        <div class="ticket-name">Pack famille (3 pers.)</div>
+        <div class="ticket-price">90 €</div>
+      </div>
+      <div class="qty">
+        <button type="button" data-minus>-</button>
+        <output>0</output>
+        <button type="button" data-plus>+</button>
+      </div>
+    </article>
+
+    <div class="total">
+      <span>Total</span>
+      <span data-total>0 €</span>
+    </div>
+    <button class="btn-primary" type="button" style="margin-top:10px; width:100%; height:42px;">Continuer vers le paiement</button>
+  </aside>
+
+  <script src="./interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+= 1.5 - 09/08/2025 =
+[Tweaks] - Minor tweaks on the admin pages
+[Tweaks] - Changed textdomain
+[Check] - Full security check using Plugin Check (PCP)
+[Check] - WordPress 6.8 compatibility check
+[Check] - WooCommerce 10.0 compatibility check
+
+= 1.4.8 - 04/04/2025 =
+[Check] - WordPress 6.7 compatibility check
+[Check] - WooCommerce 9.7 compatibility check
+
+= 1.4.7 - 02/09/2024 =
+[Check] - WordPress 6.6 compatibility check
+[Check] - WooCommerce 9.2 compatibility check
+
+= 1.4.6 - 14/12/2023 =
+[Check] - WooCommerce 8.2 compatibility check
+
+= 1.4.5 - 23/09/2023 =
+[Check] - WooCommerce 8.0 compatibility check
+
+= 1.4.4 - 01/08/2023 =
+[Update] - WooCommerce 7.9 &amp; HPOS update
+
+= 1.4.3 - 08/06/2023 =
+[Update] - Updated JavaScripts
+[Update] - Updated code base prefix
+[New] - Added allow HTML tags
+
+= 1.4.2 - 20/05/2023 =
+[Fix] - Fixed WooCommerce check error
+[Update] - Updated JavaScripts
+
+= 1.4.1 - 04/05/2023 =
+[Update] - Minor Admin Settings Update
+
+= 1.4 - 08/02/2023 =
+[Fix] - Gift Cards Emails & DB bug fix
+[Fix] - Fixed Translate Errors
+
+= 1.3.12 - 01/12/2022 =
+[Fix] - Gift Cards PDF & email bug fix
+
+= 1.3.11 - 26/09/2022 =
+[Fix] - Gift Cards bug fix
+[Fix] - Wallets fund deposit bug fix
+[Update] - Updated text-domain
+
+= 1.3.10 - 05/12/2018 =
+[Fix] - Gift Card pdf bug fix
+[Fix] - Gift Card email bug fix
+
+= 1.3.9 - 24/11/2018 =
+- Partial bug fix (wallet)
+
+= 1.3.8 - 13/10/2018 =
+[Fix] - Order line item bug fix (gift card)
+[Update] - Updated plugin translation
+
+= 1.3.7 - 12/09/2018 =
+[Update] - Updated plugin core
+
+= 1.3.6 - 25/08/2018 =
+[Fix] - Order status bug fix (gift card and and wallet)
+
+= 1.3.5 - 06/06/2018 =
+[Fix] - Wallet partial payment bug fix (taxes bugs)
+[Fix] - Wallet partial payment bug fix (others)
+
+= 1.3.4 - 26/05/2018 =
+[Fix] - Giftcard form html bug fix
+
+= 1.3.3 - 11/05/2018 =
+[Fix] - Giftcard form validation bug fix
+
+= 1.3.2 - 18/03/2018 =
+[New] - Added translation file
+
+= 1.3.1 - 04/03/2018 =
+[Fix] - Wallet partial payment tax bug fix
+[Fix] - Gift card pdf template bug fix
+[New] - Added variable product support to reward extension
+
+= 1.3.0 - 04/12/2017 =
+[New] - Added gift card manager to the gift card extension
+[New] - Added gift card delivery option to the gift card extension
+[New] - Added gift card voucher payment method
+[Fix] - Wallet extension shorcodes bug fix
+[Fix] - Wallet admin order bug fix
+
+= 1.2.2 - 29/08/2017 =
+[Fix] - Shipping methods bug fix
+[Fix] - Partial payment bug fix
+[Fix] - Order stock reduction bug fix
+
+= 1.2.1 - 01/08/2017 =
+[New] - Added Email Template to Gift Card Extension
+[New] - Added Partial Payment box to Wallet extension (on cart page)
+[New] - Added Payment methods filter to Wallet (for partial payment)
+
+= 1.2.0 - 27/07/2017 =
+[New] - Added Wallet funds threshold option (for partial payment)
+[New] - Added Payment methods filter (for funds deposit)
+[New] - Added Payment methods filter (for gift card products)
+[New] - Added Payment methods filter to reward extension
+[Fix] - Wallet extension bug fix
+[Fix] - Reward extension bug fix
+[Fix] - Gift Card extension PDF bug fix
+
+= 1.1.2 - 23/07/2017 =
+[Fix] - Wallet extension bug fix
+
+= 1.1.1 - 19/07/2017 =
+[Fix] - Reward extension bug fix
+
+= 1.1.0 - 17/07/2017 =
+[New] - Added Gift card resend function
+[New] - Added Gift card coupon balance checker
+
+= 1.0.0 - 14/07/2017 =
+[Release] - Initial Release

@@ -1,0 +1,901 @@
+/*
+ Theme Name:   KidsCare Child Theme
+ Theme URI:    http://kidscare.axiomthemes.com/
+ Description:  KidsCare Child Theme
+ Author:       AxiomThemes
+ Author URI:   http://axiomthemes.com/
+ Template:     kidscare
+ Version:      1.0
+ Tags:         flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, microformats, post-formats, theme-options, threaded-comments, translation-ready
+ Text Domain:  kidscare
+*/
+
+
+/* =Theme customization starts here
+------------------------------------------------------------ */
+body, a, p, h1, h2, h3, h4, h5, h6 {
+    color: #9e685a !important;
+}
+
+/* Temporary comparison menu styles */
+.comparison-header {
+    background: #e6f4ff;
+    padding: 10px 20px;
+}
+
+.comparison-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.comparison-header__logo img {
+    max-height: 60px;
+    height: auto;
+    width: auto;
+}
+
+.comparison-nav__list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.comparison-nav__list li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+/* Events Calendar fixes */
+.tribe-events .tribe-events-c-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.tribe-events .tribe-events-c-nav__list li {
+    list-style: none;
+    margin: 0;
+}
+
+.tribe-events .tribe-events-c-nav [class*="tribe-events-c-nav"] li a,
+.tribe-events .tribe-events-c-nav [class*="tribe-events-c-nav"] li button,
+.tribe-events .tribe-events-c-ical .tribe-events-c-ical__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 4px;
+    text-transform: none;
+}
+
+.tribe-events .tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--prev"] a:before,
+.tribe-events .tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--prev"] button:before,
+.tribe-events .tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--next"] a:after,
+.tribe-events .tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--next"] button:after {
+    content: none;
+}
+
+.tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--prev"] a svg,
+.tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--prev"] button svg,
+.tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--next"] a svg,
+.tribe-events-c-nav [class*="tribe-events-c-nav"] li[class*="--next"] button svg,
+.tribe-events-c-ical .tribe-events-c-ical__link svg {
+    display: inline-block;
+}
+
+/* Parental authorization form */
+.parental-authorization .waiver-terms {
+    width: 100%;
+    max-height: 320px;
+    min-height: 180px;
+    overflow-y: auto;
+    padding: 1rem;
+}
+/* Ticket layout fixes for wider screens */
+@media (min-width: 768px) {
+    .event-tickets .tribe-tickets__tickets,
+    .event-tickets .tribe-tickets__tickets-list,
+    .event-tickets .tribe-tickets__item,
+    .tribe-common .tribe-tickets__tickets,
+    .tribe-common .tribe-tickets__tickets-list,
+    .tribe-common .tribe-tickets__item {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        word-break: normal;
+    }
+
+    .event-tickets .tribe-tickets__item .tribe-tickets__item__quantity,
+    .tribe-common .tribe-tickets__item .tribe-tickets__item__quantity {
+        margin-left: auto;
+    }
+}
+/* Fix ticket table alignment */
+.tribe-modal__cart.tribe-common.event-tickets .tribe-tickets__tickets-title {
+    width: 100%;
+}
+
+/* Refined ticket modal styling */
+.tribe-common--breakpoint-medium.tribe-dialog .tribe-modal__content {
+    max-width: min(1020px, calc(100vw - 64px));
+}
+
+.tribe-modal__cart.tribe-common.event-tickets {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2.2rem;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #fffdf9 0%, #fbf4f2 100%);
+    border: 1px solid rgba(123, 90, 79, 0.14);
+    box-shadow: 0 18px 42px rgba(79, 60, 53, 0.16);
+    overflow: hidden;
+}
+
+.tribe-modal__cart.tribe-common.event-tickets > * {
+    position: relative;
+    z-index: 1;
+}
+
+#tribe-modal__cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+#tribe-modal__cart > :not(.tribe-tickets__tickets-item) {
+    grid-column: 1 / -1;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-title {
+    margin: 0;
+    padding: 0 0 0.75rem;
+    border-bottom: 1px solid rgba(123, 90, 79, 0.2);
+    color: #4f3c35;
+    font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 2.8vw, 2.35rem);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem 1.5rem;
+    align-items: start;
+    padding: 1.35rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(123, 90, 79, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 10px 26px rgba(79, 60, 53, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item:hover,
+#tribe-modal__cart .tribe-tickets__tickets-item:focus-within {
+    box-shadow: 0 14px 28px rgba(79, 60, 53, 0.12);
+    transform: translateY(-1px);
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-title,
+#tribe-modal__cart .tribe-tickets__tickets-item-title * {
+    margin: 0;
+    color: #4f3c35;
+    font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+    font-size: clamp(1.45rem, 2vw, 1.7rem);
+    font-weight: 600;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-extra-price {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3em 0.78em;
+    border-radius: 999px;
+    border: 1px solid rgba(123, 90, 79, 0.24);
+    background: #f8f2e7;
+    color: #4f3c35;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item p,
+#tribe-modal__cart .tribe-tickets__tickets-item .tribe-common-b2,
+#tribe-modal__cart .tribe-tickets__tickets-item .tribe-common-b3 {
+    color: #6f6561;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-details,
+#tribe-modal__cart .tribe-tickets__tickets-item-content {
+    grid-column: 1;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity,
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity-content {
+    grid-column: 1;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(123, 90, 79, 0.2);
+    border-radius: 12px;
+    background: #fff;
+    color: #4f3c35;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 0 5px 14px rgba(79, 60, 53, 0.1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity button:hover,
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity button:focus-visible {
+    background: #f4e3de;
+    border-color: rgba(123, 90, 79, 0.42);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity input[type="number"] {
+    min-width: 62px;
+    padding: 0.48rem 0.55rem;
+    border: 1px solid rgba(123, 90, 79, 0.2);
+    border-radius: 12px;
+    background: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4f3c35;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity input[type="number"]:focus-visible {
+    border-color: rgba(123, 90, 79, 0.55);
+    box-shadow: 0 0 0 3px rgba(216, 172, 161, 0.26);
+    outline: none;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity label {
+    margin-right: 0.15rem;
+    color: #6f6561;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-footer,
+#tribe-modal__cart .tribe-tickets__tickets-footer-content,
+#tribe-modal__cart .tribe-tickets__tickets-footer-actions {
+    margin-top: 0.35rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(123, 90, 79, 0.2);
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-footer .tribe-common-c-btn,
+#tribe-modal__cart .tribe-tickets__tickets-footer-content .tribe-common-c-btn,
+#tribe-modal__cart .tribe-tickets__tickets-footer-actions .tribe-common-c-btn,
+#tribe-modal__cart .tribe-tickets__tickets-footer .tribe-common-c-btn-border,
+#tribe-modal__cart .tribe-tickets__tickets-footer-content .tribe-common-c-btn-border,
+#tribe-modal__cart .tribe-tickets__tickets-footer-actions .tribe-common-c-btn-border {
+    border-radius: 999px;
+    min-height: 44px;
+    padding: 0.65rem 1.25rem;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--more,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--less {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    border: none;
+    background: transparent;
+    color: #7b5a4f;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--more:hover,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--more:focus-visible,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--less:hover,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--less:focus-visible {
+    color: #4f3c35;
+    text-decoration: underline;
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    .tribe-common--breakpoint-medium.tribe-dialog .tribe-modal__content {
+        max-width: calc(100vw - 28px);
+    }
+
+    .tribe-modal__cart.tribe-common.event-tickets {
+        padding: 1.35rem;
+        border-radius: 20px;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-title {
+        font-size: clamp(1.7rem, 7vw, 2rem);
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-item {
+        grid-template-columns: 1fr;
+        padding: 1.05rem;
+    }
+}
+
+/* Booking modal child entries */
+.booked-modal.lpkr-booking-enhanced .lpkr-hidden-field,
+.booked-modal.lpkr-booking-enhanced .lpkr-hidden-input {
+    display: none !important;
+}
+
+.booked-modal.lpkr-booking-enhanced .booked-scrollable {
+    padding-bottom: 1.25rem;
+    max-height: 72vh;
+}
+
+.booked-modal.lpkr-booking-enhanced .cf-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-children,
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-contact {
+    background: #fff9fb;
+    border: 1px solid rgba(255, 156, 196, 0.45);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 12px 30px rgba(92, 58, 54, 0.08);
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-children__title,
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-contact__title {
+    margin: 0 0 0.35rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4b2e2c;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-children__subtitle {
+    margin: 0 0 1rem;
+    color: #6f5250;
+    font-size: 0.95rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-children__add {
+    margin-top: 0.5rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid #ff9cc4;
+    background: linear-gradient(135deg, #ffe3ef, #ffeef8);
+    color: #4b2e2c;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-children__add:hover,
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-children__add:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(255, 156, 196, 0.35);
+    outline: none;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry {
+    border-radius: 14px;
+    border: 1px solid rgba(75, 46, 44, 0.08);
+    padding: 1rem;
+    background: #fff;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry + .lpkr-child-entry {
+    margin-top: 0.85rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__remove {
+    border: none;
+    background: none;
+    color: #c04b7c;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__label {
+    font-weight: 600;
+    color: #5c3a36;
+    font-size: 0.95rem;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__hint {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6f5250;
+    display: none;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-child-entry__hint.is-visible {
+    display: block;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-contact__field {
+    margin: 0;
+}
+
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-contact__field input,
+.booked-modal.lpkr-booking-enhanced .lpkr-booking-contact__field textarea,
+.booked-modal.lpkr-booking-enhanced .cf-block textarea {
+    border-radius: 10px;
+    padding: 0.65rem 0.75rem;
+}
+
+@media (min-width: 720px) {
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity input[type="number"]:focus-visible {
+    outline: 3px solid rgba(255, 156, 196, 0.45);
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-quantity label {
+    font-weight: 600;
+    color: #4b2e2c;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--more,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--less {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(255, 156, 196, 0.25);
+    color: #8a4c71;
+    font-weight: 600;
+    border: 1px solid rgba(255, 156, 196, 0.45);
+    text-transform: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--more:hover,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--more:focus-visible,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--less:hover,
+#tribe-modal__cart .tribe-tickets__tickets-item-details-summary-button--less:focus-visible {
+    background: rgba(255, 156, 196, 0.4);
+    color: #5c3a36;
+    outline: none;
+}
+
+@media (max-width: 900px) {
+    .tribe-modal__cart.tribe-common.event-tickets {
+        padding: 2.5rem 2.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .tribe-modal__cart.tribe-common.event-tickets {
+        padding: 2rem;
+        border-radius: 24px;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-title {
+        font-size: 1.75rem;
+    }
+
+    #tribe-modal__cart {
+        gap: 1.25rem;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-item {
+        padding: 1.5rem;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-item-quantity {
+        gap: 0.65rem;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-item-quantity button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tribe-modal__cart.tribe-common.event-tickets {
+        padding: 1.75rem 1.5rem;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-item-quantity button {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    #tribe-modal__cart .tribe-tickets__tickets-item-quantity input[type="number"] {
+        min-width: 64px;
+        padding: 0.45rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+.parental-authorization__form {
+    display: grid;
+    gap: 2rem;
+}
+
+.parental-authorization__fields {
+    display: grid;
+    gap: 2rem;
+}
+
+.parental-authorization__section {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.75rem;
+    border: 1px solid #e3d7d3;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 10px 28px rgba(20, 29, 56, 0.08);
+}
+
+.parental-authorization__section-title {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #342c2a;
+}
+
+.parental-authorization__section-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .parental-authorization__section-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.parental-authorization__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.parental-authorization__helper {
+    margin: 0;
+    color: #6b5c57;
+    font-size: 0.95rem;
+}
+
+.minors-repeater__add {
+    margin-left: auto;
+}
+
+.minors-repeater {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.minors-repeater__items {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.minor-card {
+    position: relative;
+    display: grid;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e3d7d3;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f4f2 100%);
+    box-shadow: 0 8px 22px rgba(20, 29, 56, 0.07);
+}
+
+.minor-card__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #342c2a;
+}
+
+.minor-card__title span {
+    margin-left: 0.35rem;
+}
+
+.minor-card__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.minor-card__remove {
+    justify-self: flex-start;
+}
+
+.button--link {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #c1572d;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button--link:hover,
+.button--link:focus {
+    color: #8f3d1c;
+}
+
+.button--link:focus-visible {
+    outline: 3px solid rgba(193, 87, 45, 0.35);
+    outline-offset: 3px;
+}
+
+.button--link.is-disabled {
+    color: #b9ada8;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.minors-repeater__add.button {
+    box-shadow: none;
+}
+
+/*.minors-repeater__add.button:focus-visible,
+.minor-card__remove:focus-visible,
+.waiver-section__checkbox input:focus-visible,
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+    outline: 3px solid rgba(44, 96, 138, 0.35);
+    outline-offset: 2px;
+}*/
+
+/*.form-error--block {
+    margin: 0;
+}
+
+.parental-authorization__notice {
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.parental-authorization__notice--success {
+    background-color: #e6f4ff;
+    color: #2c608a;
+}
+
+.parental-authorization__notice--error {
+    background-color: #ffe6e6;
+    color: #9e3b3b;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-field--checkbox label {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field input[type="date"] {
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #d7c2bc;
+    width: 100%;
+}
+
+.form-error {
+    color: #9e3b3b;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.waiver-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.waiver-terms {
+    width: 100%;
+    min-height: 240px;
+    padding: 1rem;
+    border: 1px solid #d7c2bc;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow-y: auto;
+    resize: none;
+}
+
+.waiver-section__checkbox {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.waiver-section__checkbox input {
+    margin-top: 0.3rem;
+}
+
+.form-actions {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .parental-authorization__section {
+        padding: 1.25rem;
+    }
+
+    .parental-authorization__section-title {
+        font-size: 1.2rem;
+    }
+
+    .minor-card {
+        padding: 1.25rem;
+    }
+}
+
+*/
+
+/* QuickCal modal restyle */
+body .booked-modal .bm-overlay {
+    background: rgba(158, 104, 90, 0.55);
+}
+
+body .booked-modal .bm-window {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(54, 33, 31, 0.28);
+    width: min(900px, calc(100% - 2.5rem));
+    max-height: calc(90vh - 32px);
+    padding-top: 0;
+}
+
+body .booked-modal .bm-window p.booked-title-bar {
+    background: #d9a69e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 32px;
+    border-radius: 14px 14px 0 0;
+}
+
+body .booked-modal .bm-window p.booked-title-bar small {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+body .booked-modal .bm-window .booked-scrollable {
+    background: #fff;
+    padding: 36px 32px 32px;
+    border-radius: 0 0 14px 14px;
+    max-height: 70vh;
+    box-sizing: border-box;
+}
+
+body .booked-modal .bm-window p,
+body .booked-modal .booked-form label {
+    color: #4b2e2c;
+}
+
+body .booked-modal .booked-form input[type="text"],
+body .booked-modal .booked-form input[type="email"],
+body .booked-modal .booked-form input[type="tel"],
+body .booked-modal .booked-form input[type="number"],
+body .booked-modal .booked-form input[type="date"],
+body .booked-modal .booked-form textarea,
+body .booked-modal .booked-form select {
+    border: 1px solid #e4d5cf;
+    border-radius: 10px;
+    box-shadow: none;
+    color: #3f2b2a;
+    background: #fff9f6;
+}
+
+body .booked-modal .booked-form select option {
+    color: #3f2b2a;
+    background: #fff9f6;
+}
+
+body .booked-modal .booked-form input:focus,
+body .booked-modal .booked-form textarea:focus,
+body .booked-modal .booked-form select:focus {
+    border-color: #9e685a;
+    box-shadow: 0 0 0 3px rgba(158, 104, 90, 0.18);
+    outline: none;
+}
+
+body .booked-modal .booked-form textarea {
+    min-height: 140px;
+    max-height: 220px;
+    overflow-y: auto;
+    height: auto;
+}
+
+body .booked-modal .booked-form .cf-block textarea {
+    height: auto;
+    max-height: 240px;
+    resize: vertical;
+}
+
+body .booked-modal input[type="submit"].button-primary,
+body .booked-modal button.button-primary {
+    background: #9e685a;
+    border-color: #9e685a;
+    color: #fff;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+body .booked-modal input[type="submit"].button-primary:hover,
+body .booked-modal button.button-primary:hover,
+body .booked-modal input[type="submit"].button-primary:focus,
+body .booked-modal button.button-primary:focus {
+    background: #7f5248;
+    border-color: #7f5248;
+}
+
+body .booked-modal .bm-window .close {
+    color: rgba(255, 255, 255, 0.9);
+    right: 18px;
+}
+
+body .booked-modal .bm-window .close:hover,
+body .booked-modal .bm-window .close:focus {
+    color: #fff;
+}

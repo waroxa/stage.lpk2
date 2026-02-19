@@ -1,0 +1,264 @@
+
+.woo_wallet .pages {
+    float: right;
+    height: 28px;
+    margin-top: 3px;
+    cursor: default;
+    color: #555;
+    display: inline-block;
+}
+
+.woo_wallet .pages .pg-page,.woo_wallet .pages a {
+    display: inline-block;
+    text-decoration: none;
+    min-width: 17px;
+    border: 1px solid #ccc;
+    padding: 3px 5px 7px;
+    background: #e5e5e5;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 3px;
+}
+
+.woo_wallet .pages a.pg-page,
+.woo_wallet .pages .pg-page-set-prev,
+.woo_wallet .pages .pg-page-set-next, 
+.woo_wallet .pages .pg-selected{
+    font-size: 12px;
+    padding-bottom: 8px;
+    padding-top: 6px;
+}
+
+.pages .pg-prev,.pages .pg-page-set-prev{
+    margin-right: 8px; 
+}
+
+.woo_wallet .pages .pg-next,.woo_wallet .pages .pg-page-set-next{
+    margin-left: 9px;
+}
+
+
+.pages .pg-text{
+    display: none;
+}
+
+.woo_wallet .pages .pg-link{
+    color: #0073aa;
+}
+.woo_wallet .pages .pg-link:focus,.woo_wallet .pages .pg-link:active{
+    outline: none;
+    box-shadow: none;
+}
+.woo_wallet .pages .pg-link:hover,.woo_wallet .pages .pg-link:focus,.woo_wallet .pages .pg-link:active,.woo_wallet .pages .pg-selected{
+    border-color: #5b9dd9;
+    color: #fff;
+    background: #00a0d2;
+}
+
+.woo_wallet .wp-list-table tr:hover td{
+    background-color: #f5f5f5;
+}
+
+.wsp-tabs
+{
+    display: block;
+}
+
+.wsp-tabs .wsp-tabs-head{
+    display: block; 
+    min-height: 41px;
+    padding: 20px 20px 0px 20px;
+    margin: 0px;
+}
+.wsp-tabs .wsp-tabs-head li{
+    display: inline; 
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-left: -1px;
+}
+.wsp-tabs .wsp-tabs-head li a{
+    display: inline-block; 
+    padding: 11px 25px;
+    border: 1px solid #e7e7e7;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    font-weight: 600;
+}
+
+.wsp-tabs .wsp-tabs-head li.wsp-active a{
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+    background-color: #fff;
+    z-index: 600;
+}
+
+.wsp-tabs .wsp-tabs-head li a:hover{
+    background-color: #fff; 
+}
+.wsp-tabs .wsp-tabs-head li.wsp-active a:focus{
+    outline: none;
+    -websit-box-shadow:none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.wsp-tabs .wsp-tabs-body{
+    display: block; 
+    border-top: 1px solid #e7e7e7;
+}
+.wsp-tabs .wsp-tabs-body-content{
+    display: none;  
+}
+
+.wsp-tabs .wsp-tabs-body-content.wsp-active{
+    display: block;  
+}
+
+.woo_wallet .popup-padding{
+    padding: 0px;
+}
+
+.woo_wallet .text-block{
+    padding: 20px 25px 10px 25px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.woo_wallet .text-block h3,.woo_wallet .text-block p{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.woo_wallet .input-box{
+    padding: 0px;
+    margin:0px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.woo_wallet .input-box .label,.woo_wallet .input-box .input{
+    padding: 20px;
+    display:inline-block;
+}
+
+.woo_wallet .input-box .label{
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.woo_wallet .input-box .input{
+
+}
+
+.woo_wallet .input-box .input input[type='text'],
+.woo_wallet .input-box .input input[type='password'],
+.woo_wallet .input-box .input input[type='number'],
+.woo_wallet .input-box .input input[type='search'],
+.woo_wallet .input-box .input input[type='url'],
+.woo_wallet .input-box .input input[type='email'],
+.woo_wallet .input-box .input input[type='file'],
+.woo_wallet .input-box .input textarea,
+.woo_wallet .input-box .input select{
+    width: 319px;
+    padding: 5px 8px;
+    height: auto;
+}
+
+.woo_wallet .input-box .input input[type='checkbox'],
+.woo_wallet .input-box .input input[type='radio']{
+    width:auto;
+    padding:initial;
+    vertical-align: bottom;
+}
+
+.woo_wallet .input-box .input label{
+    margin-right: 10px;
+}
+
+.woo_wallet .actions-box{
+    padding: 20px;
+}
+
+.woo_wallet .actions-box .button{
+    margin-right: 6px;
+}
+
+.woo_wallet .woo-wide-form{
+    border-spacing: 0;
+}
+
+.woo_wallet .woo-wide-form td{
+    vertical-align: top;
+    width: 50%;
+}
+
+.woo_wallet .woo-wide-form .wide-second{
+    border-left: 1px solid #e7e7e7;
+}
+
+.woo_wallet .woo-wide-form .input-box.last{
+    border-bottom: 0;
+}
+.woo_wallet .woo-wide-form .input-box .label, .woo_wallet .woo-wide-form .input-box .input {
+    padding-top: 10px;
+
+}
+.woo_wallet .woo-wide-form .input-box .label{
+    padding-bottom: 0px;
+    display: block;
+    width:100%; 
+}
+
+
+
+.woo_wallet .woo-wide-form.actions-box{
+    border-top: 1px solid #e7e7e7;
+}
+
+.woo_wallet .table-action-form{
+    display: inline;
+}
+
+.woo_wallet_hidden{
+    display:none;
+    visibility: hidden;
+}
+
+/*
+=============
+Reward Styles
+=============
+*/
+#woocommerce-product-data ul.wc-tabs li.wznd_reward_options a::before {
+    content: '\f526'!important;
+}
+/*
+================
+Gift Card Styles
+================
+*/
+#woocommerce-product-data ul.wc-tabs li.wznd_giftcard_options a::before {
+    font-family: WooCommerce !important;
+    content: '\e01e'!important;
+}
+
+.show_if_price_range,.show_if_price_select{
+    display: none;
+}
+
+.wznd_barcode{
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 7px;
+    background-color: #fff;
+}
+
+.wznd_qrcode{
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+}

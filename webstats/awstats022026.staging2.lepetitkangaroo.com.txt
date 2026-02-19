@@ -1,0 +1,447 @@
+AWSTATS DATA FILE 7.7 (build 20161204)
+# If you remove this file, all statistics for date 202602 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.staging2.lepetitkangaroo.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2011                
+POS_TIME 2693                
+POS_VISITOR 8915                
+POS_DAY 10270               
+POS_DOMAIN 3558                
+POS_LOGIN 3850                
+POS_ROBOT 4005                
+POS_WORMS 4371                
+POS_EMAILSENDER 4502                
+POS_EMAILRECEIVER 4645                
+POS_SESSION 10446               
+POS_SIDER 10652               
+POS_FILETYPES 4780                
+POS_DOWNLOADS 5176                
+POS_OS 5572                
+POS_BROWSER 5716                
+POS_SCREENSIZE 6020                
+POS_UNKNOWNREFERER 6094                
+POS_UNKNOWNREFERERBROWSER 6217                
+POS_ORIGIN 6335                
+POS_SEREFERRALS 6477                
+POS_PAGEREFS 6621                
+POS_SEARCHWORDS 6802                
+POS_KEYWORDS 6954                
+POS_MISC 2356                
+POS_ERRORS 7013                
+POS_CLUSTER 3706                
+POS_SIDER_404 7179                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20260216112503 30465 13201115 0
+FirstTime 20260210162426
+LastTime 20260213202838
+LastUpdate 20260219043854 30465 29381 0 0 1084
+TotalVisits 41                  
+TotalUnique 29                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 30                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+RealPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavascriptDisabled 0 0 0
+TotalMisc 0 0 0
+AddToFavourites 0 17 0
+WindowsMediaPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 409 612 5497438 45 45 5
+1 413 768 5187302 48 48 5
+2 656 895 6195479 63 105 2734
+3 775 1966 35498391 66 183 327742
+4 739 1245 12642229 65 66 449001
+5 1244 1837 22832281 83 83 466542
+6 1144 3022 42968899 69 93 632905
+7 739 2928 43451261 73 80 535011
+8 330 330 26997 20 20 0
+9 347 701 5076102 23 23 0
+10 330 330 26970 21 21 0
+11 305 305 24909 20 21 47
+12 717 1278 22578609 89 89 642223
+13 510 884 6930870 73 73 486816
+14 323 600 6257274 27 27 0
+15 271 271 6359 23 25 47476
+16 302 1050 8703557 64 124 904978
+17 186 370 2922592 40 69 430870
+18 59 437 18683421 72 201 6435821
+19 50 306 2658798 6 6 0
+20 309 1426 25816315 72 106 1551458
+21 804 2478 40491003 127 155 1812749
+22 1460 2901 74203800 105 106 1327334
+23 565 581 2455042 87 87 32389
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 4
+ca 12802 23735 320700206
+us 106 2534 46224945
+gb 79 1154 22057971
+ie 0 98 769319
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+CFNetwork 74 5716755 20260211183204 0
+wordpress 24 737599 20260212020623 0
+facebookexternalhit/ 16 630719 20260211183203 0
+^mozilla\/5\.0$ 3 71205 20260214152112 0
+TelegramBot 1 36128 20260211044951 0
+AhrefsBot/ 1 47 20260216112503 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 16
+jpeg 371 30426223 0 0
+gif 16 101009 0 0
+jpg 127 68681636 0 0
+woff2 402 19137036 0 0
+webp 142 3590382 0 0
+php 11214 49147605 0 0
+heic 2 2020374 0 0
+html 505 23742065 0 0
+png 728 100768095 0 0
+map 9 138882 0 0
+css 6410 29428292 0 0
+woff 6 179988 0 0
+js 6770 53055577 0 0
+Unknown 644 157012 0 0
+ttf 63 5652495 0 0
+svg 112 2142313 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+/wp-content/plugins/revslider/admin/views/features/assets/addonsvideo.mp4 0 1 288751
+/wp-content/plugins/revslider/admin/views/features/assets/supportvideo-1.mp4 0 1 196850
+/wp-content/plugins/revslider/admin/views/features/assets/templatesvideo.mp4 0 1 615471
+/wp-content/plugins/revslider/admin/views/features/assets/library_video.mp4 0 1 282385
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+Unknown 5 5
+linux 3688 185
+ios_iphone 6649 515
+macosx 555 46
+win10 16628 12236
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 13
+safari18.6 1804 136
+edge18 1 0
+safari18.5 61 13
+firefox144.0 191 15
+safari26.2.1 237 22
+chrome97.0.4692.71 98 0
+safari 3753 254
+iphone 794 90
+chrome144.0.0.0 17083 12281
+chrome55.0.2883.87 2 2
+chrome143.0.7499.4 3495 168
+chrome129.0.0.0 1 1
+Unknown 5 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+WhatsApp/2.22.23.5_i 20260211075248
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+WhatsApp/2.22.23.5_i 20260211075248
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 180 222
+From1 0 0
+From2 0 0
+From3 2 2
+From4 12805 27301
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+https://tools.siteground.com 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+301 463 598
+499 883 0
+404 159 4973017
+500 40 186507
+403 88 632403
+206 36 3101128
+302 51 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 13
+/fr/design-proposals/ 2 -
+/fr/favicon.ico/ 17 https://staging2.lepetitkangaroo.com/wp-admin/post.php
+/fr/apple-touch-icon.png/ 16 -
+/fr/product/programme-womency-x-petit-kangaroo/ 3 -
+/fr/wp-content/plugins/home/customer/www/lepetitkangaroo.com/public_html/wp-content/plugins/bloom/core/admin/fonts/modules.ttf/ 10 https://staging2.lepetitkangaroo.com/fr/
+/fr/wp-content/themes/kidscare-child/js/booking-modal.js/ 45 https://staging2.lepetitkangaroo.com/fr/events/
+/fr/wp-content/plugins/home/customer/www/lepetitkangaroo.com/public_html/wp-content/plugins/bloom/core/admin/css/core.css/ 6 https://staging2.lepetitkangaroo.com/wp-admin/plugins.php
+/fr/wp-content/plugins/woocommerce-memberships/assets/js/frontend/wc-memberships-blocks-common.min.js.map/ 14 -
+/fr/wp-content/plugins/home/customer/www/lepetitkangaroo.com/public_html/wp-content/plugins/bloom/core/admin/js/common.js/ 16 https://staging2.lepetitkangaroo.com/wp-admin/plugins.php
+/fr/wp-content/plugins/home/customer/www/lepetitkangaroo.com/public_html/wp-content/plugins/bloom/core/admin/js/support-center.js/ 6 https://staging2.lepetitkangaroo.com/wp-admin/plugins.php
+/fr/wp-content/plugins/home/customer/www/lepetitkangaroo.com/public_html/wp-content/plugins/bloom/core/admin/js/core.js/ 6 https://staging2.lepetitkangaroo.com/wp-admin/plugins.php
+/fr/apple-touch-icon-precomposed.png/ 16 -
+/fr/ 2 https://staging2.lepetitkangaroo.com/wp-admin/customize.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 30
+142.119.37.93 12552 20551 216590446 20260213014615
+173.177.3.172 141 1600 48369273 20260212035807
+70.28.93.198 53 718 37312629 20260211223718
+52.165.61.82 18 546 7474377 20260211074245
+132.196.21.4 17 205 3092412 20260211063623
+132.196.21.11 17 205 3092845 20260211064238
+142.122.117.235 17 371 5049111 20260213094626
+132.196.21.8 17 205 3093020 20260211064401
+52.165.61.92 16 195 8907443 20260211071540
+52.176.38.28 16 194 8905914 20260211062250
+52.165.61.94 6 182 2491519 20260211074314
+64.227.3.56 2 2 147069 20260213012958
+52.165.61.90 6 182 2491523 20260211074259
+52.165.61.86 12 364 4982990 20260211073206
+74.57.211.185 3 82 119438 20260213194116
+67.69.76.201 9 186 2538676 20260211190600
+52.242.217.102 6 162 1761407 20260210211228
+52.165.61.87 6 182 2491517 20260211074343
+142.169.80.121 1 16 2358201 20260211231538
+142.112.110.172 9 90 2687882 20260212183224
+52.173.125.84 6 181 2486400 20260211060618
+18.203.176.135 0 98 769319 
+52.173.161.147 6 163 1598399 20260211032405
+132.196.23.69 15 191 8476262 20260211051343
+142.169.18.149 2 13 71928 20260211140718
+52.173.125.89 6 181 2486387 20260211060631
+132.196.21.0 7 186 2542025 20260211064217
+132.196.23.238 6 162 1761407 20260210204937
+173.177.31.228 6 27 2566513 20260213012928
+192.226.234.7 9 85 3036109 20260213202838
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 4
+20260210 1213 3036 40218688 4
+20260211 5524 14998 268250710 24
+20260212 6197 8573 69329859 6
+20260213 53 914 13336641 7
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+2mn-5mn 1
+5mn-15mn 1
+1h+ 7
+0s-30s 26
+30s-2mn 1
+15mn-30mn 3
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 118
+/wp-admin/admin-ajax.php 10992 13157186 3 4
+/wp-json/elementor/v1/checklist/user-progress 286 47940 0 0
+/fr/details-du-cours/ 117 4707780 17 1
+/wp-admin/post.php 97 21978788 0 0
+/fr/cours-evenements/ 85 3465997 5 0
+/fr/ 78 3278202 7 2
+/wp-json/wc-admin/options 66 4612 0 0
+/wp-content/plugins/bloom/core/admin/fonts/modules.ttf 63 5652495 0 1
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2 57 4407048 0 0
+/wp-content/themes/kidscare-child/fonts/fonnts.com-Roca-Regular.woff2 54 1917864 0 0
+/wp-json/wc-analytics/products/reviews 28 168 0 0
+/fr/reserver/ 9 429314 0 1
+/wp-json/wp/v2/taxonomies 3 6261 0 0
+/fr/menu/ 7 381120 1 0
+/ 8 270241 0 0
+/wp-content/themes/kidscare/css/font-face/Montserrat/montserrat-semibold.woff2 39 1108848 0 6
+/wp-content/uploads/sb-instagram-feed-images/629757477_18020193437800647_4938807859674865416_nlow.webp 8 214074 0 0
+/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2 2 210344 0 0
+/wp-content/plugins/copy-delete-posts/assets/fonts/Montserrat-Medium.woff2 3 57816 0 0
+/wp-json/wp/v2/wp_pattern_category 3 18 0 0
+/fr/event/atelier-de-peinture-pour-enfants/ 2 81346 0 0
+/wp-json/wc-analytics/admin/notes 28 168 0 0
+/wp-content/plugins/essential-grid/public/assets/font/opensans/open-sans-v34-latin-regular.woff2 1 16740 0 0
+/wp-json/wp/v2/pages/169 3 2742 0 0
+/wp-json/wc-analytics/products/count-low-in-stock 28 420 0 0
+/wp-json/wc-analytics/orders 28 476 0 0
+/fr/cours/ 7 323941 1 0
+/wp-admin/customize.php 2 578850 0 0
+/wp-json/elementor/v1/user-data/current-user 29 24429 0 0
+/wp-content/plugins/essential-grid/public/assets/font/roboto/roboto-v30-latin-500.woff2 2 31840 0 0
+/wp-content/plugins/essential-grid/public/assets/font/roboto/roboto-v30-latin-regular.woff2 2 31488 0 0
+/wp-content/plugins/bloom/css/fonts/bloomlogo.woff 2 5184 0 0
+/wp-content/uploads/sb-instagram-feed-images/626505579_18019869155800647_6937764224188924206_nthumb.webp 10 210760 0 0
+/fr/product/programme-womency-x-petit-kangaroo/ 44 2015478 4 1
+/wp-content/themes/kidscare/css/font-face/Montserrat/montserrat-bold.woff2 21 586740 0 4
+/wp-admin/upload.php 1 109503 0 0
+/wp-content/uploads/sb-instagram-feed-images/627610513_18020504690800647_5204795408014017353_nlow.webp 8 134722 0 0
+/wp-admin/admin.php 12 1166566 0 0
+/fr/shop/page/2/ 2 36444 0 0
+/fr/product/carte-cadeau/ 1 0 0 0
+/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff2 10 58392 0 0
+/fr/event/mamalatess/ 1 50058 0 0
+/cours-evenements/ 17 1123296 0 0
+/acces-a-laire-de-jeux/ 4 265519 0 0
+/wp-json/wp/v2/templates/lookup 4 24 0 0
+/wp-content/uploads/sb-instagram-feed-images/629757477_18020193437800647_4938807859674865416_nthumb.webp 10 94620 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2 6 79656 0 0
+/fr/cart/ 9 541207 0 0
+/wp-json/elementor/v1/kit-elements-defaults 30 11550 0 0
+/wp-json/elementor/v1/site-navigation/recent-posts 30 9416 0 0
+/layouts/elementor-header-default/ 1 60265 0 0
+/wp-content/plugins/woocommerce-gateway-firstdata/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/dist/frontend/sv-wc-payment-gateway-payment-form.js.map 3 19545 0 0
+/wp-content/plugins/essential-grid/public/assets/font/roboto/roboto-v30-latin-700.woff2 2 31720 0 0
+/wp-content/uploads/2025/07/IMG_7264.heic 2 2020374 0 0
+/wp-content/uploads/sb-instagram-feed-images/619507058_1582498809452359_2812927392240407224_nthumb.webp 10 186600 0 0
+/wp-content/plugins/trx_addons/css/font-icons/font/trx_addons_icons.woff2 52 2557360 0 10
+/en/ 3 203705 0 0
+/fr/courses/summer-camp-for-the-smallest-in-our-groups/ 1 47646 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2 16 1172940 0 0
+/wp-json/wp/v2/categories/1 1 291 0 0
+/wp-content/themes/kidscare/css/font-face/Montserrat/montserrat-light.woff2 30 834840 0 0
+/wp-content/plugins/essential-grid/public/assets/font/opensans/open-sans-v34-latin-600.woff2 2 33512 0 0
+/wp-content/plugins/date-time-picker-field/assets/js/vendor/datetimepicker/jquery.datetimepicker.full.min.js.map 3 53769 0 0
+/wp-content/themes/kidscare/css/font-face/Montserrat/montserrat-extralight.woff2 30 830880 0 1
+/wp-admin/edit.php 47 6640029 0 0
+/wp-content/themes/kidscare-child/fonts/fonnts.com-Roca-Black.woff2 7 247100 0 0
+/en/details-du-cours/ 4 154389 0 0
+/wp-admin/load-scripts.php 23 1059373 0 0
+/wp-content/plugins/revslider/sr6/assets/fonts/revicons/revicons.woff 1 7536 0 0
+/wp-admin/async-upload.php 6 6842 0 0
+/fr/checkout/order-received/5217/ 1 57756 0 0
+/wp-json/wp/v2/settings 3 6111 0 0
+/wp-content/plugins/revslider/sr6/assets/fonts/material/MaterialIcons-Regular.woff2 3 375348 0 0
+/wp-content/plugins/copy-delete-posts/assets/fonts/Montserrat-Bold.woff2 3 58440 0 0
+/wp-admin/load-styles.php 27 3309271 0 0
+/fr/acces-a-laire-de-jeux/ 17 870027 1 0
+/fr/event/evenement-special-aloha-avec-stitch-au-petit-kangaroo/ 10 497475 0 1
+/wp-json/elementor/v1/site-editor/templates 3 1677 0 0
+/wp-content/themes/kidscare/css/font-icons/font/fontello.woff2 54 4372920 0 0
+/wp-admin/plugins.php 4 846632 0 0
+/wp-content/uploads/sb-instagram-feed-images/629730292_18020505155800647_3215625464972656384_nthumb.webp 11 115340 0 0
+/wp-json/elementor/v1/global-widget/templates 30 180 0 0
+/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff 1 129620 0 0
+/wp-json/wp/v2/users/6 3 105 0 0
+/fr/product/mama-tonique-et-bebe-womancy/ 10 451367 1 2
+/wp-includes/js/tinymce/skins/lightgray/fonts/tinymce.woff 2 37648 0 0
+/fr/shop/ 2 73692 0 0
+/wp-content/plugins/copy-delete-posts/assets/fonts/Montserrat-Light.woff2 2 37976 0 0
+/fr/fetes-danniversaire/ 1 47938 0 0
+/wp-json/elementor/v1/globals 29 6293 0 0
+/fr/fetes-danniversaire-pour-enfants/ 13 340760 0 1
+/wp-json/wp/v2/pages/5150 1 2646 0 0
+/wp-admin/nav-menus.php 2 291103 0 0
+/wp-content/uploads/sb-instagram-feed-images/619256976_18018309536800647_8083692877013363309_nlow.webp 7 305144 0 3
+/wp-content/uploads/sb-instagram-feed-images/619507058_1582498809452359_2812927392240407224_nlow.webp 7 348698 0 0
+/wp-content/uploads/sb-instagram-feed-images/629730292_18020505155800647_3215625464972656384_nlow.webp 8 292110 0 0
+/wp-content/uploads/sb-instagram-feed-images/620492589_18018359744800647_614817040385021730_nlow.webp 7 401408 0 0
+/wp-content/uploads/sb-instagram-feed-images/620492589_18018359744800647_614817040385021730_nthumb.webp 10 193700 0 1
+/wp-json/wp/v2/comments 3 18 0 0
+/fr/checkout/ 13 881146 0 0
+/wp-content/uploads/sb-instagram-feed-images/626505579_18019869155800647_6937764224188924206_nlow.webp 8 473466 0 0
+/wp-json/wp/v2/blocks 3 18 0 0
+/wp-json/wp/v2/ 4 49692 0 0
+/details-du-cours/ 3 199818 0 0
+/wp-content/uploads/sb-instagram-feed-images/622067758_18018990314800647_2244261541882454461_nlow.webp 7 282520 0 0
+/wp-json/elementor/v1/template-library/templates 2 31449 0 0
+/wp-login.php 1 3462 0 0
+/wp-content/plugins/copy-delete-posts/assets/fonts/Montserrat-ExtraBold.woff2 2 38880 0 0
+/fr/event/mama-tonique-abdos-fessiers-cours-1/ 1 56218 0 0
+/wp-content/uploads/sb-instagram-feed-images/619256976_18018309536800647_8083692877013363309_nthumb.webp 10 136480 0 2
+/wp-content/plugins/copy-delete-posts/assets/fonts/Montserrat-Regular.woff2 2 38344 0 0
+/wp-content/uploads/sb-instagram-feed-images/627610513_18020504690800647_5204795408014017353_nthumb.webp 11 74400 0 0
+/fr/events/ 9 344854 0 0
+/fetes-danniversaire-pour-enfants/ 1 66279 0 0
+/wp-content/uploads/sb-instagram-feed-images/622067758_18018990314800647_2244261541882454461_nthumb.webp 10 126340 0 0
+/wp-admin/ 19 2310121 1 0
+/wp-content/themes/kidscare/style.css.map 3 65568 0 0
+/fr/reservations/ 1 58974 0 0
+END_SIDER

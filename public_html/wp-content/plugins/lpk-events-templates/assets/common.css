@@ -1,0 +1,8 @@
+.lpk-mobile-only{display:block}
+.lpk-desktop-only{display:block}
+@media (max-width: 767px){
+  .lpk-desktop-only{display:none}
+}
+@media (min-width: 768px){
+  .lpk-mobile-only{display:none}
+}

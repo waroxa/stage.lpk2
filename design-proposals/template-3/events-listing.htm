@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template 3 — Événements mobile | Le Petit Kangaroo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="mobile-top">
+      <div class="search-row">
+        <input class="search-input" type="search" placeholder="Rechercher un événement" aria-label="Rechercher un événement" />
+        <button class="icon-btn" aria-label="Ouvrir les filtres">☰</button>
+      </div>
+      <div class="filter-chips" role="tablist" aria-label="Filtres événements">
+        <button class="chip is-active" type="button">Tous</button>
+        <button class="chip" type="button">Aloha & spéciaux</button>
+        <button class="chip" type="button">Ateliers</button>
+        <button class="chip" type="button">Anniversaires</button>
+        <button class="chip" type="button">0–3 ans</button>
+        <button class="chip" type="button">4–7 ans</button>
+      </div>
+    </header>
+
+    <section class="content" aria-label="Événements à venir">
+      <article class="card event-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=500&q=80" alt="Enfants souriants pendant un atelier" /></div>
+        <div>
+          <div class="meta-line">
+            <span class="date-pill">Sam 23 Nov</span>
+            <span class="status">Billets ouverts</span>
+          </div>
+          <h2 class="event-title">Événement spécial Aloha avec Stitch</h2>
+          <p class="event-info"><span>11:00</span> · <span>à partir de 35 €</span></p>
+          <a class="btn-primary" href="./event-detail.htm">Réserver</a>
+        </div>
+      </article>
+
+      <article class="card event-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=500&q=80" alt="Table de créativité enfant" /></div>
+        <div>
+          <div class="meta-line">
+            <span class="date-pill">Mer 27 Nov</span>
+            <span class="status">12 places</span>
+          </div>
+          <h2 class="event-title">Atelier créatif pastel</h2>
+          <p class="event-info"><span>15:30</span> · <span>22 €</span></p>
+          <a class="btn-primary" href="./event-detail.htm">Réserver</a>
+        </div>
+      </article>
+
+      <article class="card event-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=500&q=80" alt="Parent et enfant en activité sensorielle" /></div>
+        <div>
+          <div class="meta-line">
+            <span class="date-pill">Sam 30 Nov</span>
+            <span class="status">Dernières places</span>
+          </div>
+          <h2 class="event-title">Matinée sensorielle en duo</h2>
+          <p class="event-info"><span>10:00</span> · <span>28 €</span></p>
+          <a class="btn-primary" href="./event-detail.htm">Réserver</a>
+        </div>
+      </article>
+
+      <section class="card empty-state" aria-label="État vide démo">
+        <h2>Aucun événement dans ce filtre</h2>
+        <p>Essayez “Tous” ou “Aloha & spéciaux” pour voir les prochains rendez-vous et leurs billets.</p>
+        <a class="btn-light" href="https://lepetitkangaroo.com/fr/events/">Voir le calendrier complet</a>
+      </section>
+
+      <section class="card" style="padding: 12px; font-size:0.82rem; color:var(--ink-soft);">
+        <strong style="color:var(--ink); display:block; margin-bottom:4px;">Accessibilité WordPress / Event Tickets</strong>
+        Les CTAs peuvent pointer vers les URLs live de <a href="https://lepetitkangaroo.com/fr/events/" style="text-decoration:underline;">/fr/events/</a> et vers la page événement pour garder le flux de réservation actuel.
+      </section>
+    </section>
+  </main>
+</body>
+</html>

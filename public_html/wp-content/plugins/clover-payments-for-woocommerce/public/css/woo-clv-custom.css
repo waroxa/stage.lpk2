@@ -1,0 +1,79 @@
+#wc-clover_payments-cc-form *,
+#wc-clover_payments-cc-form *::before,
+#wc-clover_payments-cc-form *::after {
+	box-sizing: border-box;
+}
+
+#wc-clover_payments-cc-form iframe {
+	border-radius: 8px;
+}
+
+#wc-clover_payments-cc-form .field {
+	height: 46px;
+	border: 1px solid #727272;
+	border-radius: 8px;
+	margin-top: 4px;
+}
+
+#wc-clover_payments-cc-form .card-row-top,
+#wc-clover_payments-cc-form .card-row-center,
+#wc-clover_payments-cc-form .date-container {
+	margin-bottom: 1em;
+}
+
+#wc-clover_payments-cc-form .input-errors {
+	margin-top: 0.25rem;
+	display: none;
+}
+
+#wc-clover_payments-cc-form .validation-error {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-top: 0;
+}
+
+#wc-clover_payments-cc-form .error-text {
+	vertical-align: middle;
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #e70000;
+}
+
+#wc-clover_payments-cc-form .error-icon {
+	flex-shrink: 0;
+}
+
+#wc-clover_payments-cc-form .error-icon path {
+	stroke: #e70000;
+}
+
+#wc-clover_payments-cc-form {
+	container-type: inline-size;
+	background: transparent;
+}
+
+@container (min-width: 320px) {
+	#wc-clover_payments-cc-form .card-row-center {
+		display: flex;
+		gap: 1em;
+	}
+
+	#wc-clover_payments-cc-form .date-container {
+		flex-grow: 1;
+		margin-bottom: 0;
+	}
+
+	#wc-clover_payments-cc-form .cvv-container {
+		flex-grow: 1;
+	}
+
+	#wc-clover_payments-cc-form .card-row-bottom {
+		display: flex;
+	}
+
+	#wc-clover_payments-cc-form .card-row-bottom .width-container {
+		width: 50%;
+		padding-right: 0.5em;
+	}
+}

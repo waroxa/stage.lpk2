@@ -1,0 +1,174 @@
+2026-02-18T16:45:16+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 5dcccc9a7f26c23ade760eb73becc66a
+            [Date] => Feb 18, 2026 @ 16:45
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=Uxjfxr
+            [Duration] => 0.79075
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/10.5.2 Hookshot (WordPress/6.9.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://lepetitkangaroo.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => x5G8wJlZs4iZQDjuLt+9WslHvudfKQYlOqX21hDXINQ=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 5dcccc9a7f26c23ade760eb73becc66a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Wed, 18 Feb 2026 16:45:16 GMT
+                                    [content-type] => text/html; charset=utf-8
+                                    [content-encoding] => gzip
+                                    [content-language] => en-us
+                                    [content-security-policy] => base-uri 'none'; object-src 'none'; frame-ancestors 'self' login.bigcommerce.com *.mybigcommerce.com admin.shopify.com klaviyo.file.force.com klaviyo.lightning.force.com klaviyo.my.salesforce.com; script-src 'report-sample' 'strict-dynamic' 'unsafe-eval'; report-uri /csp/
+                                    [vary] => Accept-Language, Cookie
+                                    [x-klaviyo-req-id] => 65ddb3fe-c4c0-41ab-8c6e-b9921f43276a
+                                    [x-envoy-upstream-service-time] => 26
+                                    [cf-cache-status] => DYNAMIC
+                                    [strict-transport-security] => max-age=31536000; includeSubDomains; preload
+                                    [x-content-type-options] => nosniff
+                                    [server] => cloudflare
+                                    [cf-ray] => 9cfefe6ebc4af849-ORD
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2026-02-18T16:45:16+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 68c6413be5aec591c815dc920e94768c
+            [Date] => Feb 18, 2026 @ 16:45
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=Uxjfxr
+            [Duration] => 0.16395
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/10.5.2 Hookshot (WordPress/6.9.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://lepetitkangaroo.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => x5G8wJlZs4iZQDjuLt+9WslHvudfKQYlOqX21hDXINQ=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 68c6413be5aec591c815dc920e94768c
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Wed, 18 Feb 2026 16:45:16 GMT
+                                    [content-type] => text/html; charset=utf-8
+                                    [content-encoding] => gzip
+                                    [content-language] => en-us
+                                    [content-security-policy] => frame-ancestors 'self' login.bigcommerce.com *.mybigcommerce.com admin.shopify.com klaviyo.file.force.com klaviyo.lightning.force.com klaviyo.my.salesforce.com; base-uri 'none'; object-src 'none'; script-src 'report-sample' 'strict-dynamic' 'unsafe-eval'; report-uri /csp/
+                                    [vary] => Accept-Language, Cookie
+                                    [x-klaviyo-req-id] => ee2c0197-851e-471c-86da-abb1712d64cd
+                                    [x-envoy-upstream-service-time] => 26
+                                    [cf-cache-status] => DYNAMIC
+                                    [strict-transport-security] => max-age=31536000; includeSubDomains; preload
+                                    [x-content-type-options] => nosniff
+                                    [server] => cloudflare
+                                    [cf-ray] => 9cfefe6fcd03c8d4-ORD
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+2026-02-18T16:45:20+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 16d4c10e37b405a1496656a2063709d9
+            [Date] => 18 février 2026 à 16 h 45
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=Uxjfxr
+            [Duration] => 0.60826
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/10.5.2 Hookshot (WordPress/6.9.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://lepetitkangaroo.com/fr/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => bdG9dGcEijmSt+W39hkvh7kVtL1kuBXnmoLDtUne7Xg=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 16d4c10e37b405a1496656a2063709d9
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Wed, 18 Feb 2026 16:45:20 GMT
+                                    [content-type] => text/html; charset=utf-8
+                                    [content-encoding] => gzip
+                                    [content-language] => en-us
+                                    [content-security-policy] => object-src 'none'; base-uri 'none'; frame-ancestors 'self' login.bigcommerce.com *.mybigcommerce.com admin.shopify.com klaviyo.file.force.com klaviyo.lightning.force.com klaviyo.my.salesforce.com; script-src 'report-sample' 'strict-dynamic' 'unsafe-eval'; report-uri /csp/
+                                    [vary] => Accept-Language, Cookie
+                                    [x-klaviyo-req-id] => 8525c9fe-3a3d-4a18-ae45-aeafcf3f9272
+                                    [x-envoy-upstream-service-time] => 22
+                                    [cf-cache-status] => DYNAMIC
+                                    [strict-transport-security] => max-age=31536000; includeSubDomains; preload
+                                    [x-content-type-options] => nosniff
+                                    [server] => cloudflare
+                                    [cf-ray] => 9cfefe89dceeb4c1-ORD
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)

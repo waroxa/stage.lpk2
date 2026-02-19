@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Petit Kangaroo — Événements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="topbar surface">
+      <h1>Événements</h1>
+      <p>Découvrez nos activités spéciales et ateliers.</p>
+    </section>
+
+    <section class="controls surface">
+      <input class="input" type="search" placeholder="Rechercher un événement, une thématique..." />
+      <button class="chip">Date</button>
+      <button class="chip">Âge</button>
+      <button class="chip">Type</button>
+      <button class="chip">Prix</button>
+      <select class="select" aria-label="Trier">
+        <option>À venir</option>
+        <option>Ce mois-ci</option>
+        <option>Le week-end</option>
+      </select>
+    </section>
+
+    <div class="section-title">
+      <h2>Prochains événements</h2>
+      <span class="helper">Pensé pour conversion billets + réservations rapides</span>
+    </div>
+
+    <section class="card-grid">
+      <article class="event-card surface">
+        <div class="event-image" style="background-image: url('https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=1200&q=80')">
+          <div class="date-badge"><strong>12</strong><span>Nov</span></div>
+        </div>
+        <div class="event-content">
+          <h3>Atelier Sensoriel d’Automne</h3>
+          <p>Textures naturelles, mini jeux, moments de découverte parent-enfant.</p>
+          <div class="meta"><span>10:00 — 11:30</span><span>À partir de 22€</span></div>
+          <div class="actions"><button class="btn btn-primary">Réserver</button><button class="btn btn-secondary">Voir</button></div>
+        </div>
+      </article>
+
+      <article class="event-card surface">
+        <div class="event-image" style="background-image: url('https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?auto=format&fit=crop&w=1200&q=80')">
+          <div class="date-badge"><strong>16</strong><span>Nov</span></div>
+        </div>
+        <div class="event-content">
+          <h3>Mini Chef: Cookies en Famille</h3>
+          <p>Recette douce et amusante, tabliers inclus, atelier guidé pas à pas.</p>
+          <div class="meta"><span>14:30 — 16:00</span><span>29€</span></div>
+          <div class="actions"><button class="btn btn-primary">Réserver</button><button class="btn btn-secondary">Voir</button></div>
+        </div>
+      </article>
+
+      <article class="event-card surface">
+        <div class="event-image" style="background-image: url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80')">
+          <div class="date-badge"><strong>23</strong><span>Nov</span></div>
+        </div>
+        <div class="event-content">
+          <h3>Événement Spécial Aloha avec Stitch</h3>
+          <p>Photo souvenir, animations hawaïennes et ambiance premium détendue.</p>
+          <div class="meta"><span>11:00 — 13:00</span><span>À partir de 35€</span></div>
+          <div class="actions"><button class="btn btn-primary">Réserver</button><button class="btn btn-secondary">Voir</button></div>
+        </div>
+      </article>
+    </section>
+
+    <details class="past-events surface">
+      <summary>Événements passés</summary>
+      <div class="past-grid">
+        <div class="past-item"><span>Halloween Party</span><span>Complet</span></div>
+        <div class="past-item"><span>Atelier Peinture Famille</span><span>Terminé</span></div>
+      </div>
+    </details>
+
+    <section class="empty-state surface">
+      <h3>Aucun événement ne correspond à vos filtres</h3>
+      <p class="helper">Pas d’inquiétude, nous ajoutons régulièrement de nouvelles dates.</p>
+      <div class="actions" style="justify-content:center;">
+        <button class="btn btn-secondary">Voir les activités</button>
+        <button class="btn btn-primary">Réserver une séance</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

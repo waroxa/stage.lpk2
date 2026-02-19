@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template 3 — Events listing desktop | Le Petit Kangaroo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles-desktop.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="desktop-top card">
+      <div class="search-row">
+        <input class="search-input" type="search" placeholder="Rechercher un événement, un thème, un âge" aria-label="Rechercher" />
+        <select class="select-input" aria-label="Trier">
+          <option>Trier : bientôt</option>
+          <option>Trier : ce week-end</option>
+          <option>Trier : prix croissant</option>
+        </select>
+        <button class="icon-btn" aria-label="Plus de filtres">☰</button>
+      </div>
+      <div class="filter-chips" role="tablist" aria-label="Filtres rapides">
+        <button class="chip is-active" type="button">Tous</button>
+        <button class="chip" type="button">Aloha & spéciaux</button>
+        <button class="chip" type="button">Ateliers</button>
+        <button class="chip" type="button">Anniversaires</button>
+        <button class="chip" type="button">0–3 ans</button>
+        <button class="chip" type="button">4–7 ans</button>
+        <button class="chip" type="button">Billets disponibles</button>
+      </div>
+    </header>
+
+    <section class="card heading">
+      <h1>Prochains événements — version desktop</h1>
+      <p>Template premium clair et compact, prêt pour WordPress avec CTA “Réserver” qui peut pointer vers les pages live de The Events Calendar / Event Tickets.</p>
+    </section>
+
+    <section class="grid" aria-label="Liste des événements">
+      <article class="card event-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=680&q=80" alt="Événement spécial Aloha" /></div>
+        <div>
+          <div class="meta-line"><span class="date-pill">Samedi 23 Nov</span><span class="status">Billets ouverts</span></div>
+          <h2 class="event-title">Événement spécial Aloha avec Stitch</h2>
+          <p class="event-info"><span>11:00 — 13:00</span> · <span>Dès 35 €</span> · <span>Casablanca</span></p>
+        </div>
+        <a class="btn-primary" href="./event-detail-desktop.htm">Réserver</a>
+      </article>
+
+      <article class="card event-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=680&q=80" alt="Atelier créatif pastel" /></div>
+        <div>
+          <div class="meta-line"><span class="date-pill">Mercredi 27 Nov</span><span class="status">12 places</span></div>
+          <h2 class="event-title">Atelier créatif pastel</h2>
+          <p class="event-info"><span>15:30 — 17:00</span> · <span>22 €</span> · <span>Casablanca</span></p>
+        </div>
+        <a class="btn-primary" href="./event-detail-desktop.htm">Réserver</a>
+      </article>
+
+      <article class="card event-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=680&q=80" alt="Matinée sensorielle" /></div>
+        <div>
+          <div class="meta-line"><span class="date-pill">Samedi 30 Nov</span><span class="status">Dernières places</span></div>
+          <h2 class="event-title">Matinée sensorielle en duo</h2>
+          <p class="event-info"><span>10:00 — 11:30</span> · <span>28 €</span> · <span>Casablanca</span></p>
+        </div>
+        <a class="btn-primary" href="./event-detail-desktop.htm">Réserver</a>
+      </article>
+
+      <section class="card empty-state">
+        <h2>Aucun événement dans cette catégorie</h2>
+        <p>Essayez le filtre “Tous” ou allez sur le calendrier complet pour afficher toutes les dates.</p>
+        <p><a class="btn-light" href="https://lepetitkangaroo.com/fr/events/">Voir /fr/events/</a></p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

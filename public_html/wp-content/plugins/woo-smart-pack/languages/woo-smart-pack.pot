@@ -1,0 +1,2371 @@
+# Copyright (C) 2025 zendcrew
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Smart Pack 1.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-smart-pack\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-08-09T05:32:33+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: woo-smart-pack\n"
+
+#. Plugin Name of the plugin
+#: D:\My Projects\Website Projects\CodeCanyon\woo-smart-pack\woo-smart-pack.php
+msgid "WooCommerce Smart Pack"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: D:\My Projects\Website Projects\CodeCanyon\woo-smart-pack\woo-smart-pack.php
+msgid "https://codecanyon.net/item/woocommerce-smart-pack-gift-card-wallet-refund-reward/20265145?ref=zendcrew"
+msgstr ""
+
+#. Description of the plugin
+#: D:\My Projects\Website Projects\CodeCanyon\woo-smart-pack\woo-smart-pack.php
+msgid "WooCommerce Smart Pack is a woocommerce wallet, refund, reward and gift card plugin"
+msgstr ""
+
+#. Author of the plugin
+#: D:\My Projects\Website Projects\CodeCanyon\woo-smart-pack\woo-smart-pack.php
+msgid "zendcrew"
+msgstr ""
+
+#. Author URI of the plugin
+#: D:\My Projects\Website Projects\CodeCanyon\woo-smart-pack\woo-smart-pack.php
+msgid "https://codecanyon.net/user/zendcrew?ref=zendcrew"
+msgstr ""
+
+#: extensions/giftcard/admin/giftcard-admin.php:19
+#: extensions/giftcard/admin/giftcard-admin.php:21
+msgid "Gift Cards"
+msgstr ""
+
+#: extensions/giftcard/admin/giftcard-admin.php:20
+msgid "Gift Cards Email & PDF"
+msgstr ""
+
+#: extensions/giftcard/admin/giftcard-admin.php:20
+#: extensions/giftcard/inc/giftcard-template.php:17
+#: extensions/giftcard/inc/giftcard-template.php:19
+msgid "Add New Template"
+msgstr ""
+
+#: extensions/giftcard/admin/giftcard-admin.php:21
+msgid "Manage Gift Cards"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:10
+msgid "All Gift Cards"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:11
+msgid "Add Gift Card"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:12
+msgid "Add New Gift Card"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:16
+msgid "Filter gift card list"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:18
+#: extensions/refund/admin/templates/refunds-list.php:15
+#: extensions/wallet/admin/templates/transactions-list.php:15
+#: extensions/wallet/admin/templates/wallet-list.php:18
+msgid "All"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:19
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:67
+#: extensions/refund/admin/templates/popup/view-refund.php:101
+#: extensions/refund/admin/templates/refunds-list.php:16
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:47
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:47
+#: extensions/wallet/admin/templates/popup/view-transaction.php:94
+#: extensions/wallet/admin/templates/transactions-list.php:16
+msgid "Pending"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:20
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:68
+msgid "Sent"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:21
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:69
+msgid "Used"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:22
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:70
+msgid "Exhausted"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:23
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:71
+#: extensions/refund/admin/templates/refunds-list.php:17
+#: extensions/refund/admin/templates/refunds-list.php:111
+msgid "Refunded"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:25
+msgid "Expired"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:39
+msgid "gift card coupon"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:40
+#: extensions/refund/admin/templates/refunds-list.php:34
+#: extensions/wallet/admin/templates/transactions-list.php:36
+#: extensions/wallet/admin/templates/wallet-list.php:37
+msgid "Search"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:57
+msgid "Sort by event date"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:58
+msgid "Sort by expiry date"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:59
+msgid "Sort by coupon code"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:60
+msgid "Sort by amount"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:64
+#: extensions/wallet/admin/templates/wallet-list.php:60
+msgid "Descending"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:65
+#: extensions/wallet/admin/templates/wallet-list.php:61
+msgid "Ascending"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:67
+#: extensions/wallet/admin/templates/wallet-list.php:63
+msgid "Sort"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:71
+#: extensions/giftcard/admin/templates/giftcards-list.php:131
+#: extensions/refund/admin/templates/refunds-list.php:37
+#: extensions/refund/admin/templates/refunds-list.php:147
+#: extensions/wallet/admin/templates/transactions-list.php:57
+#: extensions/wallet/admin/templates/transactions-list.php:159
+#: extensions/wallet/admin/templates/wallet-list.php:67
+#: extensions/wallet/admin/templates/wallet-list.php:152
+msgid "{{from}} to {{to}} of {{total}} items"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:81
+#: extensions/giftcard/admin/templates/giftcards-list.php:119
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:23
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:23
+msgid "Coupon Code"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:82
+#: extensions/giftcard/admin/templates/giftcards-list.php:120
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:34
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:34
+#: extensions/wallet/admin/templates/popup/view-transaction.php:38
+msgid "Amount"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:83
+#: extensions/giftcard/admin/templates/giftcards-list.php:121
+msgid "Balance"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:84
+#: extensions/giftcard/admin/templates/giftcards-list.php:122
+#: extensions/giftcard/inc/class-giftcard.php:352
+#: extensions/wallet/admin/templates/transactions-list.php:52
+msgid "To"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:85
+#: extensions/giftcard/admin/templates/giftcards-list.php:123
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:68
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:71
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:70
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:73
+msgid "Event Date"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:86
+#: extensions/giftcard/admin/templates/giftcards-list.php:124
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:77
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:80
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:79
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:82
+msgid "Expiry Date"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:87
+#: extensions/giftcard/admin/templates/giftcards-list.php:125
+#: extensions/refund/admin/templates/refunds-list.php:52
+#: extensions/refund/admin/templates/refunds-list.php:141
+#: extensions/wallet/admin/templates/transactions-list.php:73
+#: extensions/wallet/admin/templates/transactions-list.php:151
+#: extensions/wallet/admin/templates/wallet-list.php:84
+#: extensions/wallet/admin/templates/wallet-list.php:143
+msgid "Actions"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:103
+#: extensions/giftcard/admin/templates/giftcards-list.php:104
+#: extensions/giftcard/admin/templates/giftcards-list_inc.php:243
+#: extensions/giftcard/shortcodes.php:237
+#: extensions/giftcard/shortcodes.php:239
+#: extensions/giftcard/shortcodes.php:241
+#: extensions/giftcard/shortcodes.php:244
+#: extensions/giftcard/shortcodes.php:252
+#: extensions/giftcard/shortcodes.php:256
+#: extensions/giftcard/shortcodes.php:261
+#: extensions/giftcard/shortcodes.php:267
+#: extensions/refund/admin/templates/popup/view-refund.php:13
+#: extensions/wallet/admin/templates/popup/view-transaction.php:13
+#: extensions/wallet/admin/templates/popup/view-wallet.php:12
+#: extensions/wallet/admin/templates/wallet-list.php:102
+msgid "N/A"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:106
+msgid "View/Edit"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list.php:107
+msgid "View/Edit Gift Card"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/giftcards-list_inc.php:118
+#: extensions/giftcard/inc/class-giftcard-db.php:55
+msgid "Gift Card Coupon"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:14
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:15
+msgid "General"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:15
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:16
+msgid "Limits & Usage Restriction"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:16
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:17
+msgid "PDF & Email Template"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:17
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:18
+msgid "Card Delivery"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:37
+msgid "Save"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:38
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:39
+#: extensions/refund/admin/templates/popup/view-refund.php:132
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:82
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:87
+#: extensions/wallet/admin/templates/popup/new-wallet.php:90
+#: extensions/wallet/admin/templates/popup/view-transaction.php:139
+#: extensions/wallet/admin/templates/popup/view-wallet.php:109
+#: extensions/wallet/admin/templates/transactions-list.php:106
+msgid "Cancel"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard.php:40
+#: extensions/refund/admin/templates/popup/view-refund.php:137
+#: extensions/wallet/admin/templates/popup/view-transaction.php:144
+#: extensions/wallet/admin/templates/popup/view-wallet.php:111
+msgid "Delete"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:13
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:13
+msgid "Delivary Method"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:17
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:17
+#: extensions/giftcard/inc/giftcard-product-metabox.php:305
+#: extensions/giftcard/inc/views/form.php:58
+#: extensions/giftcard/inc/views/order-itemmeta.php:59
+msgid "Print & Send"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:18
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:18
+#: extensions/giftcard/inc/giftcard-product-metabox.php:307
+#: extensions/giftcard/inc/views/form.php:60
+#: extensions/giftcard/inc/views/order-itemmeta.php:55
+msgid "Email Address"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:25
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:25
+msgid "Sender name"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:28
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:48
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:28
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:48
+msgid "Full name"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:34
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:34
+msgid "Sender email"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:37
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:57
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:37
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:57
+msgid "Email address"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:45
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:45
+msgid "Receiver name"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:54
+#: extensions/giftcard/admin/templates/popup/new-giftcard/card_delivery.php:54
+msgid "Receiver email"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/card_delivery.php:63
+#: extensions/refund/admin/templates/popup/view-refund.php:86
+#: extensions/refund/admin/templates/popup/view-refund.php:97
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:43
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:43
+#: extensions/wallet/admin/templates/popup/view-transaction.php:79
+#: extensions/wallet/admin/templates/popup/view-transaction.php:90
+#: extensions/wallet/front-end/pages/template/transactions.php:17
+#: extensions/wallet/front-end/pages/template/transactions.php:72
+msgid "Status"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:12
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:12
+#: extensions/giftcard/inc/giftcard-product-metabox.php:60
+msgid "Discount Type"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:16
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:16
+#: extensions/giftcard/inc/class-giftcard-settings.php:95
+#: extensions/giftcard/inc/giftcard-product-metabox.php:65
+msgid "Cart Discount"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:17
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:17
+#: extensions/giftcard/inc/class-giftcard-settings.php:96
+#: extensions/giftcard/inc/giftcard-product-metabox.php:66
+msgid "Product Discount"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:26
+msgid "Coupon code"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:31
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:31
+msgid "Gift Card Amout"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:39
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:39
+msgid "Gift Card Balance"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:50
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:54
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:50
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:55
+#: extensions/giftcard/inc/class-giftcard-settings.php:123
+#: extensions/giftcard/inc/class-giftcard-settings.php:124
+#: extensions/giftcard/inc/class-giftcard-settings.php:125
+#: extensions/giftcard/inc/class-giftcard-settings.php:126
+msgid "Apply gift cards before tax"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:59
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:60
+#: extensions/giftcard/inc/class-giftcard-settings.php:133
+#: extensions/giftcard/inc/class-giftcard-settings.php:134
+#: extensions/giftcard/inc/class-giftcard-settings.php:135
+msgid "Allow free shipping"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/general.php:63
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:65
+#: extensions/giftcard/inc/class-giftcard-settings.php:136
+msgid "Check this box if the gift card grants free shipping. A free shipping method must be enabled in your shipping zone and be set to require \"a valid free shipping coupon\" (see the \"Free Shipping Requires\" setting)."
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:12
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:12
+#: extensions/giftcard/inc/class-giftcard-settings.php:171
+msgid "Minimum spend"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:15
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:15
+#: extensions/giftcard/inc/class-giftcard-settings.php:176
+msgid "No Minimum"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:20
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:20
+#: extensions/giftcard/inc/class-giftcard-settings.php:184
+msgid "Maximum spend"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:23
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:23
+#: extensions/giftcard/inc/class-giftcard-settings.php:189
+msgid "No Maximum"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:29
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:29
+#: extensions/giftcard/inc/class-giftcard-settings.php:207
+#: extensions/giftcard/inc/class-giftcard-settings.php:208
+#: extensions/giftcard/inc/class-giftcard-settings.php:209
+msgid "Exclude sale items"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:33
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:33
+#: extensions/giftcard/inc/class-giftcard-settings.php:210
+msgid "Check this box if gift cards should not apply to items on sale. Per-item gift card will only work if the item is not on sale. Per-cart gift cards will only work if there are no sale items in the cart."
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:40
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:40
+#: extensions/giftcard/inc/class-giftcard-settings.php:197
+#: extensions/giftcard/inc/class-giftcard-settings.php:198
+#: extensions/giftcard/inc/class-giftcard-settings.php:199
+msgid "Individual use only"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:44
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:44
+#: extensions/giftcard/inc/class-giftcard-settings.php:200
+msgid "Check this box if a gift card cannot be used in conjunction with other gift cards or coupons."
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:49
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:49
+#: extensions/giftcard/inc/class-giftcard-settings.php:273
+msgid "Usage limit per user"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:52
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:61
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:52
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:61
+msgid "Unlimited Usage"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/limits_usage_restriction.php:58
+#: extensions/giftcard/admin/templates/popup/new-giftcard/limits_usage_restriction.php:58
+#: extensions/giftcard/inc/class-giftcard-settings.php:260
+msgid "Usage limit per gift card"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/pdf_email.php:10
+#: extensions/giftcard/admin/templates/popup/new-giftcard/pdf_email.php:10
+msgid "PDF Template"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/pdf_email.php:26
+#: extensions/giftcard/admin/templates/popup/new-giftcard/pdf_email.php:26
+msgid "Email Template"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/pdf_email.php:30
+#: extensions/giftcard/admin/templates/popup/new-giftcard/pdf_email.php:30
+#: extensions/giftcard/inc/giftcard-product-metabox.php:64
+#: extensions/giftcard/inc/giftcard-product-metabox.php:277
+msgid "Default"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/pdf_email.php:43
+#: extensions/giftcard/admin/templates/popup/edit-giftcard/pdf_email.php:46
+#: extensions/giftcard/admin/templates/popup/new-giftcard/pdf_email.php:43
+#: extensions/giftcard/admin/templates/popup/new-giftcard/pdf_email.php:46
+#: extensions/giftcard/inc/class-giftcard-settings.php:394
+#: extensions/giftcard/inc/class-giftcard-settings.php:431
+#: extensions/refund/inc/class-refund-settings.php:77
+#: extensions/reward/inc/reward_settings.php:106
+#: extensions/wallet/inc/wallet_settings.php:399
+#: extensions/wallet/inc/wallet_settings.php:426
+#: extensions/wallet/inc/wallet_settings.php:453
+#: extensions/wallet/inc/wallet_settings.php:480
+#: extensions/wallet/inc/wallet_settings.php:507
+msgid "Message"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:11
+msgid "Create and sell unlimited number of gift cards."
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/new-giftcard.php:38
+msgid "Create Gift Card"
+msgstr ""
+
+#: extensions/giftcard/admin/templates/popup/new-giftcard/general.php:26
+msgid "Auto Generate"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:33
+#: extensions/giftcard/inc/giftcard-product-metabox.php:15
+#: extensions/giftcard/inc/giftcard-product-metabox.php:33
+msgid "Gift Card"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:76
+msgid "Gift Card Settings"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:82
+#: extensions/giftcard/inc/payment-gateway.php:44
+#: extensions/refund/inc/class-refund-settings.php:47
+#: extensions/reward/inc/reward_settings.php:46
+#: extensions/wallet/inc/payment-gateway.php:67
+#: extensions/wallet/inc/wallet_settings.php:197
+msgid "Enable/Disable"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:83
+msgid "Enable Gift Card"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:89
+msgid "Discount type"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:101
+msgid "Qrcode or Barcode"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:107
+msgid "Barcode"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:108
+msgid "Qrcode"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:113
+msgid "Gift card coupon pattern"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:116
+msgid "Coupon pattern"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:117
+msgid "Code pattern to use when creating new gift card coupon, (e.g [A10], [C10], [N10])"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:143
+msgid "Gift card expiry after days"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:150
+#: extensions/giftcard/inc/class-giftcard-settings.php:151
+#: extensions/giftcard/inc/class-giftcard-settings.php:152
+msgid "Use gift cards as coupon"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:153
+msgid "Check this box if gift cards are to be use as coupon code. Gift cards can also be use as voucher payment method"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:165
+msgid "Usage Restriction"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:174
+msgid "This field allows you to set the minimum spend (subtotal, including taxes) allowed to use gift cards."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:187
+msgid "This field allows you to set the maximum spend (subtotal, including taxes) allowed when using gift cards."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:217
+#: extensions/giftcard/inc/class-giftcard-settings.php:218
+#: extensions/giftcard/inc/giftcard-product-metabox.php:158
+msgid "Products"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:221
+msgid "Products which need to be in the cart to use gift cards or, for \"Product Discounts\", which products are discounted."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:226
+#: extensions/giftcard/inc/class-giftcard-settings.php:242
+#: extensions/giftcard/inc/giftcard-product-metabox.php:159
+#: extensions/giftcard/inc/giftcard-product-metabox.php:181
+#: extensions/wallet/inc/wallet_settings.php:88
+#: extensions/wallet/inc/wallet_settings.php:90
+msgid "Search for a product&hellip;"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:233
+#: extensions/giftcard/inc/class-giftcard-settings.php:234
+msgid "Exclude products"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:237
+msgid "Products which must not be in the cart to use gift cards or, for \"Product Discounts\", which products are not discounted."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:254
+msgid "Usage Limit"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:263
+msgid "How many times each gift card can be used before it is void."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:265
+#: extensions/giftcard/inc/class-giftcard-settings.php:278
+msgid "Unlimited usage"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:276
+msgid "How many times each gift card can be used by an invidual user. Uses billing email for guests, and user ID for logged in users."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:291
+msgid "Gift Card Management & Refunds"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:297
+msgid "Create coupon on order status change"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:298
+msgid "Choose when to create gift card coupon"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:305
+#: extensions/wallet/admin/templates/popup/view-transaction.php:95
+#: extensions/wallet/admin/templates/transactions-list.php:18
+#: extensions/wallet/inc/wallet_settings.php:158
+#: extensions/wallet/inc/wallet_settings.php:235
+msgid "On-Hold"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:306
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:49
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:49
+#: extensions/wallet/admin/templates/popup/view-transaction.php:96
+#: extensions/wallet/admin/templates/transactions-list.php:17
+#: extensions/wallet/inc/wallet_settings.php:159
+#: extensions/wallet/inc/wallet_settings.php:234
+msgid "Processing"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:307
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:50
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:50
+#: extensions/wallet/admin/templates/popup/view-transaction.php:97
+#: extensions/wallet/admin/templates/transactions-list.php:20
+#: extensions/wallet/admin/templates/transactions-list.php:121
+#: extensions/wallet/inc/wallet_settings.php:160
+#: extensions/wallet/inc/wallet_settings.php:233
+msgid "Completed"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:312
+#: extensions/giftcard/inc/class-giftcard-settings.php:313
+#: extensions/giftcard/inc/class-giftcard-settings.php:314
+#: extensions/giftcard/inc/class-giftcard-settings.php:315
+msgid "Remove expired gift cards"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:322
+msgid "Remove expired gift cards after days"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:325
+msgid "No of days"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:333
+#: extensions/giftcard/inc/class-giftcard.php:820
+#: extensions/giftcard/inc/class-giftcard.php:824
+msgid "Gift card refund"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:339
+msgid "No Refund"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:340
+msgid "Refund Buyer Or User"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:341
+msgid "Refund Buyer"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:342
+msgid "Refund User"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:352
+msgid "Gift Cards Payment Methods"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:358
+#: extensions/wallet/inc/wallet_settings.php:172
+msgid "Payment methods"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:359
+msgid "Choose which payment method can be use for gift card products, leave this field blank to support all payment methods"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:367
+#: extensions/reward/inc/reward_settings.php:72
+#: extensions/wallet/inc/wallet_settings.php:181
+#: extensions/wallet/inc/wallet_settings.php:289
+msgid "Select payment methods&hellip;"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:377
+msgid "Send To Friend Email"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:383
+#: extensions/giftcard/inc/class-giftcard-settings.php:420
+#: extensions/refund/inc/class-refund-settings.php:66
+#: extensions/reward/inc/reward_settings.php:95
+#: extensions/wallet/inc/wallet_settings.php:388
+#: extensions/wallet/inc/wallet_settings.php:415
+#: extensions/wallet/inc/wallet_settings.php:442
+#: extensions/wallet/inc/wallet_settings.php:469
+#: extensions/wallet/inc/wallet_settings.php:496
+msgid "Email subject"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:386
+#: extensions/giftcard/inc/class-giftcard-settings.php:423
+#: extensions/refund/inc/class-refund-settings.php:69
+#: extensions/reward/inc/reward_settings.php:98
+#: extensions/wallet/inc/wallet_settings.php:391
+#: extensions/wallet/inc/wallet_settings.php:418
+#: extensions/wallet/inc/wallet_settings.php:445
+#: extensions/wallet/inc/wallet_settings.php:472
+#: extensions/wallet/inc/wallet_settings.php:499
+msgid "Subject"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:391
+#: extensions/giftcard/inc/class-giftcard-settings.php:428
+#: extensions/refund/inc/class-refund-settings.php:74
+#: extensions/reward/inc/reward_settings.php:103
+#: extensions/wallet/inc/wallet_settings.php:396
+#: extensions/wallet/inc/wallet_settings.php:423
+#: extensions/wallet/inc/wallet_settings.php:450
+#: extensions/wallet/inc/wallet_settings.php:477
+#: extensions/wallet/inc/wallet_settings.php:504
+msgid "Email message"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:393
+#: extensions/giftcard/inc/email.php:23
+msgid "Hi [wznd_toname], <br /> You have recieved a gift card from [wznd_fromname] with message <strong>[wznd_message]</strong> <br /> your gift card code is [wznd_coupon] and the value of this gift card is [wznd_amount]. please redeem your gift card at  [wznd_site_link] before its expiry date on [wznd_expirydate]."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:399
+#: extensions/giftcard/inc/class-giftcard-settings.php:400
+#: extensions/giftcard/inc/class-giftcard-settings.php:401
+#: extensions/giftcard/inc/class-giftcard-settings.php:402
+msgid "Attach gift card PDF"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:414
+msgid "Gift Card Refund Notification"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard-settings.php:430
+#: extensions/giftcard/inc/email.php:44
+msgid "Hi [wznd_wallet_name], <br /> Your gift card <strong>[wznd_coupon]</strong> remaining balance <strong>[wznd_amount]</strong> has been refunded to you wallet <strong>[wznd_wallet_number]</strong>. You can use this money to purchase item at [wznd_site_link] any time."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:73
+msgid "Buy Now"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:89
+msgid "Your price"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:185
+msgid "Unknown error."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:191
+msgid "\"Gift card price\" field is empty."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:211
+msgid "\"Recipient name\" field is empty."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:217
+msgid "\"Recipient email\" field is empty."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:223
+msgid "\"Message field\" is empty."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:229
+msgid "\"Gift card date\" field is empty."
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:365
+#: extensions/wallet/admin/templates/transactions-list.php:51
+msgid "From"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:371
+msgid "Gift Card Message"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:470
+msgid "To:"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:476
+msgid "From:"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:481
+#: extensions/giftcard/inc/views/order-itemmeta.php:92
+msgid "Message:"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:491
+msgid "Gift Card Coupon:"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:501
+#: extensions/giftcard/inc/class-giftcard.php:505
+msgid "Download:"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:502
+#: extensions/giftcard/inc/views/order-itemmeta.php:126
+msgid "Download Gift Card"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:506
+msgid "Processing gift card"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:640
+msgid "Have a Gift Card or Coupon Code?"
+msgstr ""
+
+#: extensions/giftcard/inc/class-giftcard.php:640
+msgid "Click here to enter your code"
+msgstr ""
+
+#: extensions/giftcard/inc/email.php:12
+msgid "You have recieved a gift card from [wznd_fromname]"
+msgstr ""
+
+#: extensions/giftcard/inc/email.php:43
+msgid "Your gift card balance has being refunded"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-order-metabox.php:13
+msgid "Gift Card Receivers"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-order-metabox.php:66
+#: extensions/giftcard/inc/views/order-itemmeta.php:76
+msgid "Recipient name:"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-order-metabox.php:67
+#: extensions/giftcard/inc/views/order-itemmeta.php:84
+msgid "Recipient email:"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-order-metabox.php:76
+msgid "Resend Gift Cards"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-order-metabox.php:82
+msgid "No gift card found in this order."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:16
+msgid "Turn this product into gift product."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:69
+msgid "Controls gift card discount type."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:78
+msgid "Pricing Type"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:82
+msgid "Sales or Regular Price"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:83
+msgid "User Price"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:84
+msgid "Price Range"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:85
+msgid "Price Selection"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:88
+msgid "Controls gift card pricing type."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:97
+msgid "Price Minimun"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:100
+msgid "Controls minimun price range for price range."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:111
+msgid "Price Maximun"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:114
+msgid "Controls maximun price range for price range."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:130
+msgid "Price Select Options"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:134
+msgid "Controls price selection options."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:143
+msgid "Gift card validity (Days)"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:147
+msgid "Gift card validity period in days."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:178
+msgid "Products which need to be in the cart to use this gift card or, for \"Product Discounts\", which products are discounted."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:180
+msgid "Exclude Products"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:200
+msgid "Products which must not be in the cart to use this gift card or, for \"Product Discounts\", which products are not discounted."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:203
+msgid "Product categories"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:204
+msgid "Any category"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:224
+msgid "A product must be in this category for the gift card to remain valid or, for \"Product Discounts\", products in these categories will be discounted."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:226
+msgid "Exclude categories"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:227
+msgid "No categories"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:247
+msgid "Product must not be in this category for the gift card to remain valid or, for \"Product Discounts\", products in these categories will not be discounted."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:255
+msgid "Show Schedule Date"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:256
+msgid "Allow Buyers to specify when to send their gift cards."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:260
+msgid "Gift Card Code Pattern"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:264
+msgid "Code pattern to use when creating new gift card coupon, (e.g [A10], [Aa10], [a10], [C10], [Cc10], [c10], [N10])"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:265
+msgid "Use Default"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:274
+msgid "Gift Card Email Template"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:279
+#: extensions/giftcard/inc/giftcard-product-metabox.php:291
+msgid "Gift card template to use when sending mail."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:286
+msgid "Gift Card PDF Template"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:300
+msgid "Delivery Method"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:304
+msgid "Select"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:306
+msgid "Shipping"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:310
+msgid "Delivery method to use after creating a gift card."
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:315
+msgid "Buyer name field"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:317
+msgid "Allows buyers to specify their name"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:321
+msgid "Buyer email field"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:323
+msgid "Allows buyers to specify their email"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:328
+msgid "Receiver name field"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:331
+#: extensions/giftcard/inc/giftcard-product-metabox.php:338
+msgid "Allows buyers to specify receiver's email"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:336
+msgid "Receiver email field"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:342
+msgid "Message field"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-product-metabox.php:344
+msgid "Allows buyers to add gift card message"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:12
+#: extensions/giftcard/inc/giftcard-template.php:25
+msgid "Gift Card Email & PDF Templates"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:13
+#: extensions/giftcard/inc/giftcard-upgrade.php:58
+msgid "Gift Card Template"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:14
+#: extensions/giftcard/inc/giftcard-template.php:15
+msgid "Gift Card Templates"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:16
+msgid "Add New"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:18
+msgid "Edit Template"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:20
+msgid "View Template"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:21
+msgid "Search Template"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:57
+msgid "Toggle panel: Custom CSS"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:58
+msgid "Instructions"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:63
+msgid "Displays gift card coupon code"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:67
+msgid "Displays gift card message"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:71
+msgid "Displays gift card amount"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:75
+msgid "Displays gift card expiry date"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:79
+msgid "Displays gift card to recipient name"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:83
+msgid "Displays gift card to recipient email"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:87
+msgid "Displays gift card to sender name"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:91
+msgid "Displays gift card to sender email"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:95
+msgid "Displays gift card qrcode"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:99
+msgid "Displays gift card barcode"
+msgstr ""
+
+#: extensions/giftcard/inc/giftcard-template.php:111
+msgid "Custom CSS"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:17
+msgid "Voucher Payments"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:18
+msgid "Allows payment using gift card coupons."
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:46
+msgid "Enable Voucher Payment"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:50
+#: extensions/giftcard/widgets/giftcard_check.php:31
+#: extensions/wallet/inc/payment-gateway.php:73
+#: extensions/wallet/widgets/deposit.php:25
+#: extensions/wallet/widgets/mywallet.php:26
+msgid "Title"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:52
+#: extensions/wallet/inc/payment-gateway.php:75
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:53
+msgid "Voucher Payment"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:57
+#: extensions/wallet/inc/payment-gateway.php:94
+msgid "Insufficient Funds Text"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:59
+msgid "This controls the insufficient funds message which the user sees when someone tries to puchase item without having enough money in their gift card."
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:60
+#: extensions/wallet/inc/payment-gateway.php:97
+msgid "Insufficient funds."
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:64
+#: extensions/wallet/inc/payment-gateway.php:80
+msgid "Description"
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:65
+#: extensions/wallet/inc/payment-gateway.php:81
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: extensions/giftcard/inc/payment-gateway.php:67
+msgid "You can make payments using gift card voucher"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:17
+#: extensions/giftcard/inc/views/form.php:24
+#: extensions/giftcard/inc/views/form.php:42
+msgid "Enter Gift Price:"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:18
+#: extensions/giftcard/inc/views/form.php:42
+msgid "Price"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:54
+#: extensions/giftcard/inc/views/order-itemmeta.php:68
+msgid "Delivery Method:"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:59
+#: extensions/giftcard/inc/views/order-itemmeta.php:64
+msgid "Shipping Address"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:73
+msgid "Send gift card to:"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:79
+msgid "Recipient name"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:86
+msgid "Recipient email"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:94
+msgid "Your name (optional)"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:101
+msgid "Your email (optional)"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:116
+msgid "Gift card message"
+msgstr ""
+
+#: extensions/giftcard/inc/views/form.php:127
+msgid "Gift card Date"
+msgstr ""
+
+#: extensions/giftcard/inc/views/order-itemmeta.php:42
+msgid "Coupon:"
+msgstr ""
+
+#: extensions/giftcard/inc/views/order-itemmeta.php:100
+msgid "Send Date:"
+msgstr ""
+
+#: extensions/giftcard/inc/views/order-itemmeta.php:108
+msgid "Sender name:"
+msgstr ""
+
+#: extensions/giftcard/inc/views/order-itemmeta.php:117
+msgid "Sender email:"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:200
+#: extensions/giftcard/widgets/giftcard_check.php:94
+msgid "Enter code"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:201
+#: extensions/giftcard/widgets/giftcard_check.php:93
+msgid "Check"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:203
+#: extensions/giftcard/widgets/giftcard_check.php:96
+msgid "Amount:"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:204
+#: extensions/giftcard/widgets/giftcard_check.php:97
+msgid "Remaining balance:"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:205
+#: extensions/giftcard/widgets/giftcard_check.php:98
+msgid "Sent to:"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:206
+#: extensions/giftcard/widgets/giftcard_check.php:99
+msgid "Expiry date:"
+msgstr ""
+
+#: extensions/giftcard/shortcodes.php:275
+msgid "Invalid gift card code."
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:11
+#: extensions/giftcard/widgets/giftcard_check.php:92
+msgid "Gift Card Checker"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:12
+msgid "Allows users to check their gift card balance"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:36
+#: extensions/wallet/widgets/deposit.php:30
+msgid "Button Text"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:41
+#: extensions/wallet/widgets/deposit.php:35
+msgid "Placeholder"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:45
+msgid "Amount Label"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:49
+msgid "Balance Label"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:53
+msgid "Sent To Label"
+msgstr ""
+
+#: extensions/giftcard/widgets/giftcard_check.php:57
+msgid "Expiry Date Label"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:13
+msgid "Requested On:"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:20
+msgid "Order Number"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:29
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:16
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:16
+#: extensions/wallet/admin/templates/popup/new-wallet.php:27
+#: extensions/wallet/admin/templates/popup/view-transaction.php:29
+#: extensions/wallet/admin/templates/popup/view-wallet.php:46
+msgid "Account Number"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:38
+#: extensions/refund/admin/templates/refunds-list.php:49
+#: extensions/refund/admin/templates/refunds-list.php:138
+msgid "Order Amount"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:46
+msgid "Request Amount"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:61
+msgid "Amount Refunded"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:72
+msgid "Refundable Amount"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:102
+msgid "Aproved"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:103
+#: extensions/refund/admin/templates/refunds-list.php:18
+#: extensions/refund/admin/templates/refunds-list.php:116
+msgid "Rejected"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:114
+#: extensions/refund/admin/templates/popup/view-refund.php:117
+#: extensions/refund/admin/templates/refunds-list.php:51
+#: extensions/refund/admin/templates/refunds-list.php:140
+msgid "Reason"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:127
+#: extensions/wallet/admin/templates/popup/view-transaction.php:134
+msgid "Close"
+msgstr ""
+
+#: extensions/refund/admin/templates/popup/view-refund.php:131
+msgid "Update"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:10
+#: extensions/refund/refund.php:34
+msgid "Refund Requests"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:13
+#: extensions/wallet/admin/templates/transactions-list.php:13
+#: extensions/wallet/admin/templates/wallet-list.php:16
+msgid "Filter account list"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:33
+msgid "Order number"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:46
+#: extensions/refund/admin/templates/refunds-list.php:135
+msgid "Order #"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:47
+#: extensions/refund/admin/templates/refunds-list.php:136
+msgid "Order Date"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:48
+#: extensions/refund/admin/templates/refunds-list.php:137
+msgid "Request Date"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:50
+#: extensions/refund/admin/templates/refunds-list.php:139
+msgid "Req. Amount"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:62
+msgid "n/a"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:82
+msgid " - View Order"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:96
+msgid "Reject"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:103
+#: extensions/refund/inc/class-refund-settings.php:24
+#: extensions/refund/inc/class-refund.php:113
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:64
+msgid "Refund"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:123
+#: extensions/wallet/admin/templates/transactions-list.php:133
+#: extensions/wallet/admin/templates/wallet-list.php:108
+#: extensions/wallet/admin/templates/wallet-list.php:114
+msgid "View"
+msgstr ""
+
+#: extensions/refund/admin/templates/refunds-list.php:124
+msgid "Refund Details"
+msgstr ""
+
+#: extensions/refund/inc/class-refund-settings.php:41
+msgid "Orders Refund Settings"
+msgstr ""
+
+#: extensions/refund/inc/class-refund-settings.php:48
+msgid "Enable Orders Refund"
+msgstr ""
+
+#: extensions/refund/inc/class-refund-settings.php:60
+msgid "Refund Notification"
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:52
+msgid "Are you sure you wish to process this refund? this action cannot be undone."
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:53
+msgid "Refund {{price}} via Wallet"
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:120
+#: extensions/refund/inc/class-refund.php:130
+msgid "Refund Completed"
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:123
+msgid "Refund Rejected"
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:126
+msgid "Pending Refund"
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:206
+msgid "Order Refund"
+msgstr ""
+
+#: extensions/refund/inc/class-refund.php:207
+msgid "Hi [wznd_wallet_name], <br /> Your wallet has been credited with [wznd_trans_amount] for the refund of order [wznd_order_link], your new wallet balance is [wznd_wallet_current]."
+msgstr ""
+
+#: extensions/reward/inc/class-reward.php:118
+#: extensions/reward/inc/class-reward.php:152
+#: extensions/reward/inc/class-reward.php:160
+msgid "Info"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:19
+#: extensions/reward/inc/reward-product-meta.php:89
+msgid "Purchase Reward"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:47
+#: extensions/reward/inc/reward_settings.php:47
+msgid "Enable Purchase Reward"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:49
+msgid "Allow customers wallet to be rewarded with credit."
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:55
+msgid "Amount Type"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:59
+msgid "Fixed Value"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:60
+msgid "Fixed Value (per unit)"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:61
+msgid "Percentage %"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:62
+msgid "Percentage % ( per unit)"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:65
+msgid "Controls the reward amount type."
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:72
+msgid "Reward Amount"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:74
+msgid "Enter amount"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:81
+msgid "Purchase reward amount for this product."
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:88
+msgid "Reward Remark"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:91
+msgid "Reward Transaction remark."
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:98
+msgid "Purchase Reward Info"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:99
+msgid "Enter Info"
+msgstr ""
+
+#: extensions/reward/inc/reward-product-meta.php:101
+msgid "Information about the purchase reward"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:23
+msgid "Reward"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:40
+msgid "Purchase Reward Settings"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:53
+msgid "Reward  transactions remark"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:63
+#: extensions/wallet/inc/wallet_settings.php:280
+msgid "Allowed payment methods"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:64
+msgid "Choose which payment method can be use for purchase reward, leave this field blank to support all payment methods"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:77
+msgid "Payment methods filter"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:78
+msgid "Limit users to the above list of payment methods"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:89
+msgid "Reward Notification"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:97
+msgid "Purchase reward"
+msgstr ""
+
+#: extensions/reward/inc/reward_settings.php:105
+msgid "Hi [wznd_wallet_name], <br /> Your wallet has been credited with [wznd_trans_credit] for purchasing [wznd_product_link], your new wallet balance is [wznd_wallet_current]."
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:25
+msgid "Beneficiary"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:48
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:48
+msgid "On Hold"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:58
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:58
+msgid "Type"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:62
+#: extensions/wallet/admin/templates/transactions-list.php:71
+#: extensions/wallet/admin/templates/transactions-list.php:149
+#: extensions/wallet/admin/templates/wallet-list.php:106
+#: extensions/wallet/admin/templates/wallet-list.php:112
+#: extensions/wallet/front-end/pages/template/transactions.php:18
+#: extensions/wallet/front-end/pages/template/transactions.php:73
+msgid "Credit"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:63
+#: extensions/wallet/front-end/pages/my-wallet.php:21
+msgid "Deposit"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:65
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:66
+msgid "Transfer"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:71
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:74
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:73
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:76
+#: extensions/wallet/admin/templates/popup/new-wallet.php:76
+#: extensions/wallet/admin/templates/popup/new-wallet.php:79
+#: extensions/wallet/admin/templates/popup/view-transaction.php:108
+#: extensions/wallet/admin/templates/popup/view-transaction.php:118
+#: extensions/wallet/admin/templates/popup/view-wallet.php:95
+#: extensions/wallet/admin/templates/popup/view-wallet.php:98
+#: extensions/wallet/admin/templates/transactions-list.php:69
+#: extensions/wallet/admin/templates/transactions-list.php:147
+#: extensions/wallet/front-end/pages/template/transactions.php:16
+#: extensions/wallet/front-end/pages/template/transactions.php:71
+msgid "Remark"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/credit-wallet.php:81
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:86
+msgid "Add Funds"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:25
+msgid "Full Name"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:62
+#: extensions/wallet/admin/templates/transactions-list.php:72
+#: extensions/wallet/admin/templates/transactions-list.php:150
+#: extensions/wallet/admin/templates/wallet-list.php:107
+#: extensions/wallet/admin/templates/wallet-list.php:113
+#: extensions/wallet/front-end/pages/template/transactions.php:19
+#: extensions/wallet/front-end/pages/template/transactions.php:74
+msgid "Debit"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:63
+msgid "Withdrawal"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:64
+msgid "Payment"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/debit-wallet.php:65
+msgid "Bill"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:11
+msgid "Note:"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:11
+msgid "You can create wallet for registered users only."
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:18
+msgid "User ID"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:21
+msgid "User name or email address"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:30
+msgid "Auto generate"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:35
+#: extensions/wallet/admin/templates/popup/view-wallet.php:68
+#: extensions/wallet/admin/templates/wallet-list.php:80
+#: extensions/wallet/admin/templates/wallet-list.php:139
+msgid "Ledger Balance"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:44
+#: extensions/wallet/admin/templates/popup/view-wallet.php:77
+#: extensions/wallet/admin/templates/wallet-list.php:81
+#: extensions/wallet/admin/templates/wallet-list.php:140
+msgid "Current Balance"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:55
+#: extensions/wallet/admin/templates/popup/view-wallet.php:86
+#: extensions/wallet/admin/templates/wallet-list.php:82
+#: extensions/wallet/admin/templates/wallet-list.php:141
+msgid "Total Spent"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:64
+#: extensions/wallet/admin/templates/popup/view-wallet.php:55
+msgid "Locked/Unlocked"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:68
+#: extensions/wallet/admin/templates/popup/view-wallet.php:59
+#: extensions/wallet/admin/templates/wallet-list.php:19
+msgid "Unlocked"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:69
+#: extensions/wallet/admin/templates/popup/view-wallet.php:60
+#: extensions/wallet/admin/templates/wallet-list.php:20
+msgid "Locked"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/new-wallet.php:89
+msgid "Create Wallet"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:13
+msgid "Issued On:"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:13
+msgid "Completed On:"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:20
+msgid "Receipt Number"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:47
+msgid "Transaction Type"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:56
+msgid "Issued By"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:68
+msgid "Completed By"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:98
+#: extensions/wallet/admin/templates/transactions-list.php:19
+#: extensions/wallet/admin/templates/transactions-list.php:126
+msgid "Cancelled"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-transaction.php:138
+msgid "Update Transaction"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:12
+msgid "Open On:"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:12
+msgid "Last Access:"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:12
+msgid "Last Transaction:"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:19
+#: extensions/wallet/admin/templates/popup/view-wallet.php:22
+msgid "First Name"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:28
+#: extensions/wallet/admin/templates/popup/view-wallet.php:31
+msgid "Last Name"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:37
+msgid "Email"
+msgstr ""
+
+#: extensions/wallet/admin/templates/popup/view-wallet.php:108
+msgid "Update Wallet"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:10
+msgid "All Transactions"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:35
+msgid "email or account no"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:53
+msgid "Find"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:67
+#: extensions/wallet/admin/templates/transactions-list.php:145
+#: extensions/wallet/front-end/pages/template/transactions.php:15
+#: extensions/wallet/front-end/pages/template/transactions.php:70
+msgid "Receipt #"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:68
+#: extensions/wallet/admin/templates/transactions-list.php:146
+msgid "Account #"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:70
+#: extensions/wallet/admin/templates/transactions-list.php:148
+msgid "Issue Date"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:87
+#: extensions/wallet/front-end/pages/template/transactions.php:41
+msgid "View Order"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:113
+msgid "Complete"
+msgstr ""
+
+#: extensions/wallet/admin/templates/transactions-list.php:134
+msgid "Transaction Details"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:10
+#: extensions/wallet/wallet.php:43
+#: extensions/wallet/wallet.php:44
+msgid "All Wallets"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:11
+msgid "Add Wallet"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:12
+msgid "Add New Wallet"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:36
+msgid "name, email or account no"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:54
+msgid "Sort by Date"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:55
+msgid "Sort by name"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:56
+msgid "Sort by account no"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:78
+#: extensions/wallet/admin/templates/wallet-list.php:137
+msgid "Acount #"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:79
+#: extensions/wallet/admin/templates/wallet-list.php:138
+msgid "Account Name"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:83
+#: extensions/wallet/admin/templates/wallet-list.php:142
+msgid "Last Activity"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:115
+msgid "Credit Wallet"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:118
+msgid "Debit Wallet"
+msgstr ""
+
+#: extensions/wallet/admin/templates/wallet-list.php:125
+msgid "View Wallet"
+msgstr ""
+
+#: extensions/wallet/front-end/pages.php:14
+#: extensions/wallet/front-end/pages.php:27
+#: extensions/wallet/front-end/pages/my-wallet.php:12
+#: extensions/wallet/inc/payment-gateway.php:76
+#: extensions/wallet/widgets/mywallet.php:11
+msgid "My Wallet"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/my-wallet.php:13
+msgid "Ledger Balance:"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/my-wallet.php:14
+msgid "Current Balance:"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/my-wallet.php:15
+msgid "Total Spent:"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/my-wallet.php:19
+#: extensions/wallet/widgets/deposit.php:11
+msgid "Wallet Deposit"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/my-wallet.php:20
+msgid "Enter Amount"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/my-wallet.php:25
+#: extensions/wallet/wallet.php:45
+msgid "Transactions"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/template/transactions.php:20
+#: extensions/wallet/front-end/pages/template/transactions.php:75
+msgid "Date"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/template/transactions.php:81
+msgid "Previous"
+msgstr ""
+
+#: extensions/wallet/front-end/pages/template/transactions.php:81
+msgid "Next"
+msgstr ""
+
+#: extensions/wallet/inc/class-account-db.php:40
+msgid "Account Created"
+msgstr ""
+
+#: extensions/wallet/inc/class-wallet.php:231
+#: extensions/wallet/inc/class-wallet.php:235
+#: extensions/wallet/inc/wallet_settings.php:143
+msgid "Funds Deposit"
+msgstr ""
+
+#: extensions/wallet/inc/email.php:12
+msgid "Your new wallet has been created"
+msgstr ""
+
+#: extensions/wallet/inc/email.php:13
+msgid "Hi [wznd_wallet_name], <br /> Your new wallet has been created, you can deposit any amount into your wallet and later use this funds to purchase product & services on our website."
+msgstr ""
+
+#: extensions/wallet/inc/email.php:24
+#: extensions/wallet/inc/wallet_settings.php:299
+msgid "New Wallet Reward"
+msgstr ""
+
+#: extensions/wallet/inc/email.php:25
+msgid "Hi [wznd_wallet_name], <br /> Your new wallet has been credited with [wznd_trans_credit] as part of our on going promo, your new wallet balance is [wznd_wallet_current]."
+msgstr ""
+
+#: extensions/wallet/inc/email.php:43
+msgid "New Transactions: [wznd_trans_receipt]"
+msgstr ""
+
+#: extensions/wallet/inc/email.php:44
+msgid "Hi [wznd_wallet_name], <br /> A [wznd_trans_type] transaction ([wznd_trans_receipt]) has occured on your wallet, your new wallet balance is [wznd_wallet_current]."
+msgstr ""
+
+#: extensions/wallet/inc/email.php:59
+msgid "Transactions [wznd_trans_receipt] status"
+msgstr ""
+
+#: extensions/wallet/inc/email.php:60
+msgid "Hi [wznd_wallet_name], <br /> A [wznd_trans_type] transaction ([wznd_trans_receipt]) is now [wznd_trans_status], your new wallet balance is [wznd_wallet_current]."
+msgstr ""
+
+#: extensions/wallet/inc/email.php:82
+msgid "New Funds Deposit"
+msgstr ""
+
+#: extensions/wallet/inc/email.php:83
+msgid "Hi [wznd_wallet_name], <br /> Your wallet has been credited with [wznd_trans_credit] funds deposit, your new wallet balance is [wznd_wallet_current]."
+msgstr ""
+
+#: extensions/wallet/inc/partial-payment.php:73
+msgid "Wallet Funds"
+msgstr ""
+
+#: extensions/wallet/inc/partial-payment.php:134
+#: extensions/wallet/inc/partial-payment.php:178
+#: extensions/wallet/inc/wallet_settings.php:191
+msgid "Partial Payment"
+msgstr ""
+
+#: extensions/wallet/inc/partial-payment.php:179
+msgid "Use the {{funds}} available funds in my wallet"
+msgstr ""
+
+#: extensions/wallet/inc/partial-payment.php:180
+msgid "Use my wallet funds"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:19
+msgid "Wallet Payments"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:20
+msgid "Allows payment using funds in the wallet database."
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:69
+msgid "Enable Wallet Payment"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:83
+msgid "Make payment using {{funds}} available funds in your wallet"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:87
+msgid "Lock Text"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:89
+msgid "This controls the lock message which the user sees when their wallet is locked."
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:90
+msgid "Your wallet account is currently locked please contact our customer care."
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:96
+msgid "This controls the insufficient funds message which the user sees when someone tries to puchase item without having enough money in their wallet."
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:101
+msgid "Transaction Remarks"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:103
+msgid "This controls transaction remarks made by the gateway."
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:104
+msgid "Order Payment"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:108
+msgid "Remove Pending Orders"
+msgstr ""
+
+#: extensions/wallet/inc/payment-gateway.php:110
+msgid "Auto Remove Pending Payment Orders"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:30
+msgid "Wallet"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:83
+msgid "Deposit product"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:86
+msgid "Select a product to use for funds deposit"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:102
+msgid "Wallet Settings"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:108
+msgid "Auto create wallet"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:109
+msgid "Automatically create new wallet for users"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:116
+msgid "Account number start from"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:122
+msgid "New wallet remark"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:129
+msgid "Receipt number format"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:131
+msgid "You can use the following variables: {{account_number}} and {{transaction_id}}"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:150
+msgid "Complete deposit on order status change"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:151
+msgid "Choose when to make complete deposit order"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:165
+msgid "Deposit remark"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:173
+msgid "Choose which payment method can be use for funds deposit, leave this field blank to support all payment methods"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:198
+msgid "Enable partial payment"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:205
+msgid "Cart text"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:212
+msgid "Wallet funds threshold"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:215
+msgid "Controls the minimum wallet balance for partial payment to apply on cart"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:225
+msgid "Complete payment on order status change"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:226
+msgid "Choose when to make complete partial payment order"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:240
+msgid "Payment remark"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:247
+msgid "Show partial payment box"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:248
+msgid "Allows users to choose when to apply partial payment on their cart."
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:255
+msgid "Partial payment box title"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:262
+msgid "Partial payment box description"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:273
+msgid "Partial payment box checkbox text"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:281
+msgid "Choose which payment method can be use with partial payment, leave this field blank to support all payment methods"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:305
+#: extensions/wallet/inc/wallet_settings.php:310
+msgid "Reward amount"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:308
+msgid "Amount to credit every new wallet"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:318
+msgid "Reward remark"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:329
+msgid "Reward transaction status"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:348
+msgid "Wallets Data Security"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:354
+msgid "System user"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:363
+msgid "Encryption key"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:370
+msgid "Encryption key VI"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:382
+msgid "New Wallet Notification"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:409
+msgid "New Wallet Reward Notification"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:436
+msgid "Funds Deposit Notification"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:463
+msgid "Transactions Notification"
+msgstr ""
+
+#: extensions/wallet/inc/wallet_settings.php:490
+msgid "Transactions Status Notification"
+msgstr ""
+
+#: extensions/wallet/wallet.php:43
+msgid "Wallets"
+msgstr ""
+
+#: extensions/wallet/wallet.php:125
+#: extensions/wallet/wallet.php:196
+#: extensions/wallet/wallet.php:271
+#: extensions/wallet/wallet.php:355
+#: extensions/wallet/wallet.php:454
+#: extensions/wallet/wallet.php:498
+#: extensions/wallet/wallet.php:533
+msgid "Done!"
+msgstr ""
+
+#: extensions/wallet/wallet.php:131
+#: extensions/wallet/wallet.php:202
+#: extensions/wallet/wallet.php:277
+msgid "Error!"
+msgstr ""
+
+#: extensions/wallet/wallet.php:361
+msgid "error!"
+msgstr ""
+
+#: extensions/wallet/wallet.php:368
+msgid "A wallet account for this user already exist!"
+msgstr ""
+
+#: extensions/wallet/wallet.php:375
+msgid "I can NOT create a wallet account for unregistered users!"
+msgstr ""
+
+#: extensions/wallet/widgets/deposit.php:12
+msgid "Allows users to deposit funds into their wallet"
+msgstr ""
+
+#: extensions/wallet/widgets/mywallet.php:12
+msgid "Displays users wallet informations"
+msgstr ""
+
+#: extensions/wallet/widgets/mywallet.php:31
+msgid "Ledger Text"
+msgstr ""
+
+#: extensions/wallet/widgets/mywallet.php:36
+msgid "Current Text"
+msgstr ""
+
+#: extensions/wallet/widgets/mywallet.php:41
+msgid "Total Spent Text"
+msgstr ""
+
+#: woo-smart-pack.php:111
+msgid "WooCommerce Smart Pack requires WooCommerce to be installed and activated."
+msgstr ""

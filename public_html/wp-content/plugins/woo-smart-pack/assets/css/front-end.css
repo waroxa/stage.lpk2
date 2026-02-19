@@ -1,0 +1,65 @@
+
+.woo_wallet_panel.locked{
+    text-align: center;
+    display: block;
+}
+
+.woo_wallet_panel.locked .dashicons{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--wznd-my-wallet a:before{
+    content:'\f0d6';
+}
+
+.wznd_gift_card_input input,
+.wznd_gift_card_input select,
+.wznd_gift_card_input textarea{
+    margin-bottom: 10px;
+    min-width: 100%;
+}
+
+.wznd_gift_card_input.wznd_gift_card_price,.wznd_gift_card_input.wznd_gift_card_delivery{
+   margin-bottom: 10px; 
+}
+
+.wznd_gift_card_input p{
+    margin-bottom: 10px; 
+    font-weight: 600;
+}
+
+.wznd_gift_card_show_if_email.wznd_gift_card_hide_field{
+    visibility: hidden;
+    display: none;
+}
+
+.wooznd_partialpayment_box{
+    display:block;
+    border:1px solid #eee;
+    padding:15px;
+    margin-bottom: 15px;
+}
+
+.wooznd_partialpayment_box .blockOverlay{
+    background-color: rgba(255,255,255,0.6);
+    z-index: 9999;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:1px;
+    right:1px;
+    bottom: 1px;
+    left:1px;
+}
+.wooznd_partialpayment_title{
+    display:block;   
+    margin-bottom: 15px; 
+}
+
+.wooznd_pay_input input{
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

@@ -1,0 +1,370 @@
+<?php
+/**
+ * WooCommerce First Data
+ *
+ * This source file is subject to the GNU General Public License v3.0
+ * that is bundled with this package in the file license.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.gnu.org/licenses/gpl-3.0.html
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to support@kestrelwp.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade WooCommerce First Data to newer
+ * versions in the future. If you wish to customize WooCommerce First Data for your
+ * needs please refer to http://docs.woocommerce.com/document/firstdata/
+ *
+ * @author      Kestrel
+ * @copyright   Copyright (c) 2013-2024, Kestrel
+ * @license     http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ */
+
+namespace Kestrel\WooCommerce\First_Data\Clover\Gateway;
+
+use Kestrel\WooCommerce\First_Data\Clover\Blocks\Gateway_Blocks_Handler;
+use Kestrel\WooCommerce\First_Data\Clover\Integrations\Subscriptions;
+use SkyVerge\WooCommerce\PluginFramework\v5_15_2 as Framework;
+
+defined( 'ABSPATH' ) or exit;
+
+/**
+ * Handles the custom Clover payment form.
+ *
+ * This overrides the framework's implementation to support Clover's hosted iframe SDK,
+ * which uses iframes for the payment inputs like Braintree.
+ *
+ * @since 5.0.0
+ *
+ * @method Credit_Card get_gateway()
+ */
+class Payment_Form extends Framework\SV_WC_Payment_Gateway_Payment_Form {
+
+
+	/** @var string JavaScript handler base class name */
+	protected $js_handler_base_class_name = 'WC_First_Data_Clover_Payment_Form_Handler';
+
+	/** @var string transaction approval card number */
+	const TEST_CARD_NUMBER_APPROVAL = '4761530001111126';
+
+	/** @var string transaction decline card number */
+	const TEST_CARD_NUMBER_DECLINE = '378282246310005';
+
+
+	/**
+	 * Gets the JS handler class name.
+	 *
+	 * @since 5.0.0
+	 *
+	 * @return string
+	 */
+	protected function get_js_handler_class_name() {
+
+		return $this->js_handler_base_class_name;
+	}
+
+
+	/**
+	 * Get saved payment method checkbox HTML.
+	 *
+	 * Overrides parent method to limit saving a single token (card) at the time to the account.
+	 *
+	 * @see Framework\SV_WC_Payment_Gateway_Payment_Form::get_save_payment_method_checkbox_html()
+	 *
+	 * @since 5.2.3
+	 * @internal
+	 *
+	 * @return string
+	 */
+	protected function get_save_payment_method_checkbox_html() {
+
+		// if the customer does not have a saved token already, just show the checkbox to save a token (or ignore when tokenization is disabled)...
+		if ( empty( $this->get_tokens() ) || ! ( $this->tokenization_allowed() || $this->tokenization_forced() ) ) {
+			return parent::get_save_payment_method_checkbox_html();
+		}
+
+		// ...otherwise, show a message that they can only save one card, and redirect to the account page to remove an existing card before saving a new one
+		ob_start();
+
+		$target = '';
+
+		?>
+		<p class="form-row">
+			<?php
+
+			// phpcs:ignore
+			if ( ! isset( $_GET['change_payment_method'] ) && ! is_add_payment_method_page() ) :
+
+				$target = 'target="_blank"';
+
+				// a mock disabled save payment method checkbox should help understanding what is not allowed (and is consistent with the normal UI)
+				?>
+				<label>
+					<input type="checkbox" disabled="disabled" />
+					<?php esc_html_e( 'Securely Save to Account', 'woocommerce-gateway-firstdata' ); ?>
+				</label>
+				<?php
+
+			endif;
+
+			echo $this->get_gateway()->get_single_payment_method_limitation_notice( $target ); // phpcs:ignore
+
+			?>
+		</p>
+		<?php
+
+		/**
+		 * Filters the save payment method checkbox HTML.
+		 *
+		 * @see Framework\SV_WC_Payment_Gateway_Payment_Form::get_save_payment_method_checkbox_html()
+		 *
+		 * @since 5.2.3
+		 *
+		 * @param string $html
+		 * @param Framework\SV_WC_Payment_Gateway_Payment_Form $this payment form instance
+		 */
+		return (string) apply_filters( 'wc_' . $this->get_gateway()->get_id() . '_payment_form_save_payment_method_checkbox_html', ob_get_clean(), $this );
+	}
+
+
+	/**
+	 * Renders the payment form description, overridden to add the test card numbers for easier sandbox testing.
+	 *
+	 * @link https://docs.clover.com/docs/test-card-numbers
+	 *
+	 * @see Framework\SV_WC_Payment_Gateway_Payment_Form::render_payment_form_description()
+	 * @since 5.0.0
+	 */
+	public function render_payment_form_description() {
+
+		parent::render_payment_form_description();
+
+		if ( ( isset( $_GET['change_payment_method'] ) || is_add_payment_method_page() ) && ! empty( $this->get_tokens() ) ) :
+
+			return; // do not bother if there's a card saved already
+
+		elseif ( $this->get_gateway()->is_test_environment() ) :
+
+			// this would still show up if the cart has a subscription and no payment fields, but we don't bother
+			?>
+			<p><?php esc_html_e( 'Test card numbers:', 'woocommerce-gateway-firstdata' ); ?></p>
+
+			<ul class="wc-clover-test-card-numbers" style="margin-left: 0;">
+				<li><code><?php echo self::TEST_CARD_NUMBER_APPROVAL; ?></code> - <?php esc_html_e( 'Approved', 'woocommerce-gateway-firstdata' ); ?></li>
+				<li><code><?php echo self::TEST_CARD_NUMBER_DECLINE; ?></code> - <?php esc_html_e( 'Declined (CSC)', 'woocommerce-gateway-firstdata' ); ?></li>
+			</ul>
+			<?php
+
+		endif;
+	}
+
+
+	/**
+	 * Renders the payment fields.
+	 *
+	 * Overridden to add the hidden fields for Custom Checkout tokenization.
+	 *
+	 * @see Framework\SV_WC_Payment_Gateway_Payment_Form::render_payment_fields()
+	 * @since 2.0.0
+	 */
+	public function render_payment_fields() {
+
+		if ( is_add_payment_method_page() && ! empty( $this->has_tokens() ) ) {
+			// prevent showing card details if a card is already saved, and we are trying to add a new one
+			return;
+		}
+
+		/** @see Subscriptions::prevent_entering_new_card_with_existing_token() for Subscriptions handling () */
+		parent::render_payment_fields();
+
+		$hidden_fields = [
+			'js-token',
+			'account-number', // this will be the first 6 and last 4 combined, which will be handled by the framework to set card type & last 4
+			'exp-month',
+			'exp-year',
+		];
+
+		foreach ( $hidden_fields as $field ) {
+			echo '<input type="hidden" name="wc-' . $this->get_gateway()->get_id_dasherized() . '-' . sanitize_html_class( $field ) . '" />';
+		}
+
+		// TODO: any reason we can't just mark these as hidden and add to get_credit_card_fields() below?
+	}
+
+
+	/**
+	 * Renders the payment fields.
+	 *
+	 * Overridden to output empty divs for each field instead of actual inputs.
+	 * Clover Custom Checkout uses these to attach iframe inputs. The divs are
+	 * styled like the inputs would be, and the transparent iframes sit inside.
+	 *
+	 * @since 2.0.0
+	 *
+	 * @param array $field payment field params
+	 */
+	public function render_payment_field( $field ) {
+
+		if ( ! isset( $field['id'] ) ) {
+			return;
+		}
+
+		// skip the special hidden field flag that the gateway adds to indicate this checkout is operating as a shortcode
+		if ( 'hidden' === $field['type'] && 'shortcode' === $field['value'] ) {
+			return;
+		}
+
+		$sanitized_input_classes = implode( ' ', array_map( 'sanitize_html_class', (array) explode( ' ', $field['input_class'][0] ?? '' ) ) );
+
+		?>
+		<div class="form-row <?php echo isset( $field['class'] ) ? implode( ' ', array_map( 'sanitize_html_class', (array) $field['class'] ) ) : ''; ?>">
+			<label for="<?php echo esc_attr( $field['id'] ) . '-hosted'; ?>"><?php
+			echo esc_html( $field['label'] ?? '' ); if ( $field['required'] ?? false ) :
+				?>
+				<abbr class="required" title="required">&nbsp;*</abbr><?php endif; ?></label>
+			<div id="<?php echo esc_attr( $field['id'] ) . '-hosted'; ?>" class="<?php echo $sanitized_input_classes; ?>" data-placeholder="<?php echo isset( $field['placeholder'] ) ? esc_attr( $field['placeholder'] ) : ''; ?>"></div>
+			<div id="<?php echo esc_attr( $field['id'] ) . '-hosted-error'; ?>" class="<?php echo esc_attr( 'wc-' . $this->get_gateway()->get_id_dasherized() . '-hosted-input-error' ); ?>"></div>
+		</div>
+		<?php
+	}
+
+
+	/**
+	 * Get the default credit card fields plus the postal code field that Clover expects
+	 *
+	 * @see Framework\SV_WC_Payment_Gateway_Payment_Form::get_credit_card_fields()
+	 * @since 2.0.0
+	 *
+	 * @param array $field payment field params
+	 */
+	public function get_credit_card_fields() {
+
+		$fields = parent::get_credit_card_fields();
+
+		if ( $this->get_gateway()->avs_card_holder_name() ) {
+			// TODO: localize this for US/CA (en-CA, fr-CA)
+			$fields['card-holder-name'] = [
+				'type'              => 'text',
+				'label'             => esc_html__( 'Card Holder Name', 'woocommerce-gateway-firstdata' ),
+				'id'                => 'wc-' . $this->get_gateway()->get_id_dasherized() . '-card-holder-name',
+				'name'              => 'wc-' . $this->get_gateway()->get_id_dasherized() . '-card-holder-name',
+				'required'          => true,
+				'class'             => [ 'form-row-wide' ],
+				'input_class'       => [ 'js-sv-wc-payment-gateway-credit-card-form-input' ],
+				'maxlength'         => 10,
+				'custom_attributes' => [
+					'autocorrect'    => 'no',
+					'autocapitalize' => 'no',
+					'spellcheck'     => 'no',
+				],
+			];
+		}
+
+		// TODO: localize this for US/CA (en-CA, fr-CA)
+		if ( $this->get_gateway()->avs_street_address() ) {
+			$fields['street-address'] = [
+				'type'              => 'text',
+				'label'             => esc_html__( 'Street Address', 'woocommerce-gateway-firstdata' ),
+				'id'                => 'wc-' . $this->get_gateway()->get_id_dasherized() . '-street-address',
+				'name'              => 'wc-' . $this->get_gateway()->get_id_dasherized() . '-street-address',
+				'required'          => true,
+				'class'             => [ 'form-row-wide' ],
+				'input_class'       => [ 'js-sv-wc-payment-gateway-credit-card-form-input' ],
+				'maxlength'         => 10,
+				'custom_attributes' => [
+					'autocorrect'    => 'no',
+					'autocapitalize' => 'no',
+					'spellcheck'     => 'no',
+				],
+			];
+		}
+
+		// TODO: localize this for US/CA (en-CA, fr-CA)
+		$fields['postal-code'] = [
+			'type'              => 'text',
+			'label'             => esc_html__( 'Postal Code', 'woocommerce-gateway-firstdata' ),
+			'id'                => 'wc-' . $this->get_gateway()->get_id_dasherized() . '-postal-code',
+			'name'              => 'wc-' . $this->get_gateway()->get_id_dasherized() . '-postal-code',
+			'required'          => true,
+			'class'             => [ 'form-row-wide' ],
+			'input_class'       => [ 'js-sv-wc-payment-gateway-credit-card-form-input' ],
+			'maxlength'         => 10,
+			'custom_attributes' => [
+				'autocorrect'    => 'no',
+				'autocapitalize' => 'no',
+				'spellcheck'     => 'no',
+			],
+		];
+
+		return $fields;
+	}
+
+
+	/**
+	 * Merge the Clover JS vars in with the standard framework gateway JS vars
+	 *
+	 * @see Framework\SV_WC_Payment_Gateway_Payment_Form::get_js_handler_args()
+	 * @since 5.0.0
+	 *
+	 * @return array
+	 */
+	protected function get_js_handler_args() : array {
+
+		$args = parent::get_js_handler_args();
+
+		$args['debug']       = $this->get_gateway()->debug_log();
+		$args['styles']      = $this->get_hosted_element_styles();
+		$args['publicToken'] = $this->get_gateway()->get_public_token();
+		$args['locale']      = $this->get_gateway()->get_locale();
+
+		/**
+		 * Filters the Clover JS SDK args
+		 *
+		 * @since 5.0.0
+		 *
+		 * @param array $args JS args
+		 * @param Payment_Form $form_handler payment form handler
+		 */
+		return apply_filters( 'wc_' . $this->get_gateway()->get_id() . '_payment_fields_js_args', $args, $this );
+	}
+
+
+	/**
+	 * Determines if it should render the payment form JavaScript in the checkout page.
+	 *
+	 * @since 5.2.0
+	 *
+	 * @return bool
+	 */
+	protected function should_render_js_on_checkout_page() : bool {
+		global $post;
+
+		$should_render = parent::should_render_js_on_checkout_page();
+
+		/** only render on the checkout page (for the add payment method page - for the add payment pay page {@see Payment_Form::maybe_render_js()}) */
+		if ( $should_render && ( ! is_checkout() || is_checkout_pay_page() ) && Framework\Blocks\Blocks_Handler::is_checkout_block_in_use() && ( $post && ! Gateway_Blocks_Handler::page_contains_checkout_shortcode( $post ) ) ) {
+			$should_render = false;
+		}
+
+		return $should_render;
+	}
+
+
+	/**
+	 * Gets the payment field styles.
+	 *
+	 * Their JS allows us to specify styles to render on each iframe field.
+	 * This sets some common base styles for each, and allows filtering to further match other theme-specific styles.
+	 *
+	 * @since 2.0.0
+	 *
+	 * @return array
+	 */
+	public function get_hosted_element_styles() : array {
+
+		return $this->get_gateway()->get_hosted_element_styles();
+	}
+
+
+}
